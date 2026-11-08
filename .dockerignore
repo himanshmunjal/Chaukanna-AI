@@ -1,0 +1,9 @@
+**/.env
+**/.env.local
+**/node_modules
+**/*.db*
+web/dist
+benchmark/noisy
+benchmark/.tts-cache
+**/.DS_Store
+*.csv

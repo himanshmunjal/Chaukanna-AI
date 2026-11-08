@@ -1,0 +1,24 @@
+# secrets
+.env
+!.env.example
+
+# backend
+backend/chaukanna.db*
+backend/bin/
+benchmark/results*.json
+
+# frontend
+web/node_modules/
+web/dist/
+
+.DS_Store
+gnanicheck.wav
+benchmark/.tts-cache/
+benchmark/noisy/
+benchmark/*.json
+
+# Local backups of call data: phone numbers and transcripts
+backend/archive/
+
+# Fuller charts for reading the results, not for sharing
+benchmark/charts/review/

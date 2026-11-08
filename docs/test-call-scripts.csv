@@ -1,0 +1,180 @@
+﻿script_no,group,test_label,scam_type,edge_case,title,script,call_number,notes,priority
+1,Well-known scam,Scam,Digital arrest / fake police,,CBI and a drug case,"Caller: Namaste madam, main CBI Delhi se Inspector Rathore bol raha hoon. Aapke Aadhaar se ek bank account khula hai.
+Dadi: Kaisa account? Maine toh kuch nahi kiya.
+Caller: Us account mein do crore ki money laundering hui hai. Aapke naam ka arrest warrant nikal chuka hai.
+Dadi: Hai Ram, ab kya hoga?
+Caller: Aap video call pe aaiye. Phone mat kaatna, aur ghar mein kisi ko mat batana.",,,1 Core
+2,Well-known scam,Scam,Digital arrest / fake police,,"Court on video, then a ""safe"" account","Caller: Madam, aap ab digital arrest mein hain. Abhi Supreme Court ke judge aapse baat karenge.
+Dadi: Judge sahab? Mujhse?
+Caller: Aapke saare paise RBI ki jaanch mein jayenge. Jaanch ke baad vapas mil jayenge.
+Dadi: Toh mujhe kya karna hai?
+Caller: FD tod kar saara paisa is safe account mein transfer kar dijiye, aaj hi.",,,Optional
+3,Well-known scam,Scam,Courier or customs parcel,,FedEx parcel to Taiwan,"Caller: Hello, FedEx Mumbai se bol rahe hain. Aapke naam ka parcel Taiwan ja raha tha, customs ne pakda hai.
+Dadi: Maine koi parcel nahi bheja.
+Caller: Usme paanch passport aur drugs mile hain. Main call Mumbai crime branch ko transfer kar raha hoon.
+Dadi: Arre, ye kya ho gaya?
+Caller: Officer aapse baat karenge. Tab tak kisi se baat mat kijiye.",,,1 Core
+4,Well-known scam,Scam,Bank / KYC / OTP,,KYC expired,"Caller: Madam, SBI se bol raha hoon. Aapka KYC expire ho gaya hai, aaj raat account band ho jayega.
+Dadi: Toh main branch aa jaati hoon kal.
+Caller: Nahi nahi, branch mat jaiye, line bahut lambi hai. Main yahin se kar deta hoon.
+Dadi: Achha.
+Caller: Abhi ek OTP aayega, bas woh bata dijiye.",,,1 Core
+5,Well-known scam,Scam,Relative in an emergency,,Son arrested,"Caller: Aap Rohit ki mummy bol rahi hain? Main thane se bol raha hoon. Aapke bete ne accident kar diya hai.
+Dadi: Kya? Rohit theek toh hai?
+Caller: Abhi hamare paas hai. Case banne se pehle pachaas hazaar de dijiye, chhod denge.
+Dadi: Main uske papa se baat kar leti hoon.
+Caller: Nahi, kisi ko batayengi toh FIR ho jayegi. Is number pe Google Pay kar dijiye.",,,1 Core
+6,Well-known scam,Scam,Lottery or prize,,KBC lottery,"Caller: Badhai ho madam! Aapka number KBC lucky draw mein aaya hai. Aapne pachees lakh jeete hain.
+Dadi: Sach mein? Maine toh khela hi nahi.
+Caller: Sim card se automatic selection hota hai. Bas GST aur processing fee ke 12,500 pehle jama karne honge.",,,Optional
+7,Well-known scam,Scam,"Electricity, gas or SIM cut-off",,Electricity cut tonight,"Caller: Bijli vibhag se bol raha hoon. Aapka pichhla bill update nahi hua, aaj raat nau baje connection kat jayega.
+Dadi: Bill toh maine bhar diya tha.
+Caller: System mein nahi dikh raha. Main ek link bhej raha hoon, das rupaye pay karke update kar lijiye.",,,2 Extra
+8,Well-known scam,Scam,Tech support / remote access,,AnyDesk to fix a refund,"Caller: Amazon customer care se bol raha hoon. Aapka 2,400 ka refund atka hua hai.
+Dadi: Haan, wapas karna tha ek saaman.
+Caller: Play Store se AnyDesk download kijiye, main aapke phone pe khud kar dunga.",,,1 Core
+9,Well-known scam,Scam,Refund or UPI,,Wrong money sent to you,"Caller: Aunty ji, galti se aapke number pe 5,000 chale gaye. Mere bete ki fees thi.
+Dadi: Achha? Mujhe toh pata nahi.
+Caller: Message aaya hoga. Please wapas bhej dijiye, bahut zaroori hai.",,,Optional
+10,Well-known scam,Scam,Refund or UPI,,Pay to receive a refund,"Caller: Madam, aapka 1,200 ka refund process karna hai. Aapke PhonePe pe ek request aayi hogi.
+Dadi: Haan, kuch aaya hai. Par isme toh pay likha hai.
+Caller: Woh normal process hai. Approve karke PIN daal dijiye, paise aa jayenge.",,,1 Core
+11,Well-known scam,Scam,Job or task offer,,YouTube likes job,"Caller: Hello, part-time kaam hai ghar baithe. YouTube video like karo, roz teen hazaar kamao.
+Dadi: Itna aasan hai?
+Caller: Haan, pehle Telegram group join kijiye. VIP task ke liye 2,000 deposit karna hoga, double hokar wapas milega.",,,2 Extra
+12,Well-known scam,Scam,Investment or trading,,Guaranteed share tips,"Caller: Sir, hum market experts hain. Hamare WhatsApp group mein log roz das percent kama rahe hain.
+Dadi: Risk nahi hai?
+Caller: Bilkul zero risk, guaranteed return. Aaj 50,000 lagaiye, ek hafte mein double.",,,1 Core
+13,Well-known scam,Scam,Instant loan,,Instant loan fee,"Caller: Aapka paanch lakh ka loan pre-approved hai, koi CIBIL nahi chahiye.
+Dadi: Maine apply nahi kiya.
+Caller: Bank ne khud select kiya hai. Bas 2,999 file charge bhej dijiye, loan aaj hi aa jayega.",,,Optional
+14,Well-known scam,Scam,Government benefit or insurance,,PM Kisan money,"Caller: Namaste, Krishi mantralaya se. Aapke PM Kisan ke 18,000 atke hue hain.
+Dadi: Achha, kaise milenge?
+Caller: Aadhaar number bataiye. Phir mobile pe code aayega, woh bhi bata dijiyega.",,,2 Extra
+15,Well-known scam,Scam,Fake donation,,Flood relief,"Caller: Namaste, hum baadh peediton ke liye relief fund jama kar rahe hain.
+Dadi: Kaunsi sanstha hai aapki?
+Caller: Details baad mein bhej denge. Abhi bachche bhookhe hain, is QR ko scan karke jo ho sake dijiye.",,,Optional
+16,Well-known scam,Scam,Government benefit or insurance,,English: tax refund,"Caller: Good morning, this is the Income Tax Department. You have a refund of 46,000 rupees pending.
+Dadi: Oh, I did not know that.
+Caller: To release it, please click the link we sent and enter your card details and PIN.",,,Optional
+17,Hard scam,Scam,Bank / KYC / OTP,"Never says OTP, bank or police",No scary words at all,"Caller: Aunty ji, aapke phone pe abhi ek message aaya hoga, chhe number wala.
+Dadi: Haan, kuch aaya hai.
+Caller: Bas woh number padh dijiye, aapka kaam ho jayega.",,,1 Core
+18,Hard scam,Scam,Bank / KYC / OTP,The victim complies,Dadi reads out the code,"Caller: Madam, bank se bol raha hoon. Jo code aaya hai woh bata dijiye.
+Dadi: Ruko, chashma lagati hoon. Haan, chaar, saat, do, nau.
+Caller: Aur uske baad?
+Dadi: Ek, paanch.",,,1 Core
+19,Hard scam,Scam,Bank / KYC / OTP,Uses safety advice as cover,"""Never share your OTP, but tell me""","Caller: Madam, fraud department se. Kabhi kisi ke saath OTP share mat kijiye, bahut fraud ho rahe hain.
+Dadi: Haan beta, sahi kaha.
+Caller: Isiliye aapka account safe karna hai. Ye mera official number hai, mujhe bata dijiye, kisi aur ko nahi.",,,2 Extra
+20,Hard scam,Scam,Digital arrest / fake police,"Start after a warning has played, or say it anyway",Caller attacks the warning,"Caller: Main cyber crime se bol raha hoon, aapke naam pe case hai.
+Dadi: Ye phone mein koi bol raha hai ki fraud hai.
+Caller: Woh machine hai madam, usko band kar dijiye. Main fraud nahi hoon, main sarkari officer hoon.
+Dadi: Pakka?
+Caller: Pakka. Jurmana bhar dijiye, warna kal police ghar aayegi.",,,1 Core
+21,Hard scam,Scam,Bank / KYC / OTP,90 seconds of friendly chat first,Slow build over small talk,"Caller: Namaste amma ji, kaisi hain? Tabiyat theek hai?
+Dadi: Haan beta, theek hoon. Aap kaun?
+Caller: Main aapki pension wale daftar se. Mera naam Suresh hai. Aapke yahan baarish hui kya?
+Dadi: Haan, kal hui thi.
+Caller: Achha achha. Khana khaya aapne? Bachche kaise hain?
+Dadi: Sab theek hain.
+Caller: Bas ek chhota sa kaam hai. Pension chalu rakhni hai toh jeevan pramaan karna hoga. Phone pe ek number aayega, woh bol dijiyega.",,,Optional
+22,Hard scam,Scam,Relative in an emergency,"No authority, no threat",Voice of a grandchild,"Caller: Dadi, main bol raha hoon. Pehchana?
+Dadi: Kaun, Aman?
+Caller: Haan Aman. Dadi, mera phone toot gaya, ye dost ka number hai. Fees bharni hai aaj, papa ko mat batana, daantenge.
+Dadi: Kitne chahiye?
+Caller: Bees hazaar, is number pe bhej do. Kal wapas kar dunga.",,,1 Core
+23,Hard scam,Scam,Refund or UPI,The caller offers to pay you,Army officer renting a flat,"Caller: Main Major Vikram bol raha hoon, aapka flat kiraye pe lena hai. Advance abhi bhej deta hoon.
+Dadi: Achha, theek hai.
+Caller: Army ka system alag hai. Main QR bhej raha hoon, scan karke amount daaliye, paise aapko aa jayenge.",,,Optional
+24,Hard scam,Scam,Tech support / remote access,An install with no app name,Traffic challan app,"Caller: Traffic police, aapki gaadi ka challan pending hai. WhatsApp pe file bheji hai.
+Dadi: Kaisi file?
+Caller: Usko khol kar install kar lijiye aur jo permission maange de dijiye. Challan wahin dikhega.",,,2 Extra
+25,Hard scam,Scam,Tech support / remote access,"Says show, not share",Screen on video call,"Caller: Madam, aapke phone mein virus aa gaya hai, company se bol raha hoon.
+Dadi: Arre, ab kya karun?
+Caller: Video call pe aaiye aur apna phone ka display mujhe dikhaiye, main theek karwa deta hoon.",,,Optional
+26,Hard scam,Scam,Bank / KYC / OTP,"Password and customer ID, no OTP",Bank app password,"Caller: Aapki net banking lock ho gayi hai. Main unlock kar deta hoon.
+Dadi: Kaise?
+Caller: Apna customer ID aur password bata dijiye, do minute ka kaam hai.",,,Optional
+27,Hard scam,Scam,Other,Gift cards in English,Gift cards for the boss,"Caller: Hi, this is your director. I am in a meeting and need a favour, keep it between us.
+Dadi: Yes sir, what do you need?
+Caller: Buy five Amazon gift cards of 10,000 each and read me the codes.",,,Optional
+28,Hard scam,Scam,"Electricity, gas or SIM cut-off","SMS to a number, then read back",SIM upgrade,"Caller: Airtel se bol raha hoon. Aapka SIM do ghante mein band ho jayega, 5G upgrade baaki hai.
+Dadi: Kya karna hoga?
+Caller: Ek message 121 pe bhej dijiye, phir jo number aaye woh mujhe bata dijiye.",,,Optional
+29,Hard scam,Scam,Bank / KYC / OTP,The victim says the right things,Dadi refuses firmly,"Caller: SBI se, aapka card block ho raha hai. OTP bataiye.
+Dadi: Nahi, main OTP nahi dungi. Main branch jaungi.
+Caller: Madam, aaj hi block ho jayega.
+Dadi: Hone do. Main phone rakh rahi hoon.",,,Optional
+30,Hard scam,Scam,Courier or customs parcel,The victim offers before being asked twice,Dadi agrees to pay,"Caller: Customs se bol raha hoon, aapke parcel pe 8,000 ka tax baaki hai, warna case hoga.
+Dadi: Theek hai beta, main abhi Paytm se bhej deti hoon. Case mat karna.",,,Optional
+31,Hard scam,Scam,Digital arrest / fake police,"Stand near traffic or a TV, and mumble","Noisy line, broken speech","Caller: Hello... haan... police se... aapke naam pe... warrant... sunai de raha hai?
+Dadi: Kya? Awaaz nahi aa rahi.
+Caller: Warrant hai... paise bhejo... abhi ke abhi... warna arrest.",,,1 Core
+32,Hard scam,Scam,Investment or trading,"Code-mixing, and crypto words","Mixed Hindi and English, fast","Caller: Sir, I am calling from Alpha Traders. Hamara bot daily returns deta hai, USDT mein invest karo.
+Dadi: Ye kya hota hai?
+Caller: Crypto hai sir, totally safe. Wallet address WhatsApp karta hoon, 500 dollars send kar dijiye, 48 hours mein double.",,,2 Extra
+33,Normal call that sounds like a scam,Normal call,,,Real bank fraud alert,"Caller: Madam, HDFC fraud team se. Kal raat 45,000 ka transaction hua, kya aapne kiya tha?
+Dadi: Nahi, maine nahi kiya.
+Caller: Theek hai, card block kar diya hai. Hum OTP ya PIN kabhi nahi maangte. Branch se naya card le lijiye.",,,1 Core
+34,Normal call that sounds like a scam,Normal call,,,Delivery OTP at the door,"Caller: Madam, Amazon delivery, main gate pe khada hoon. Aapka parcel hai.
+Dadi: Achha, aati hoon.
+Caller: Delivery OTP bata dijiye, tabhi order close hoga.",,,1 Core
+35,Normal call that sounds like a scam,Normal call,,,Grandchild really needs money,"Caller: Dadi, Aman bol raha hoon. Hostel ki fees ke 5,000 kam pad rahe hain.
+Dadi: Tere papa se baat hui?
+Caller: Haan, unhone kaha aapse le loon. Sunday ko ghar aaunga, wapas de dunga.",,,1 Core
+36,Normal call that sounds like a scam,Normal call,,,Grandchild warns about a scam,"Caller: Dadi, sun lo. Aajkal log CBI ban kar phone karte hain aur bolte hain digital arrest hai.
+Dadi: Haan, TV pe dekha tha.
+Caller: Woh OTP maangte hain, paise transfer karwate hain. Koi aisa bole toh phone kaat dena, mujhe call karna.",,,Optional
+37,Normal call that sounds like a scam,Normal call,,,Dadi tells a friend what happened,"Caller: Sharma ji ke saath kya hua pata hai? Kisi ne police ban ke arrest warrant ki dhamki di.
+Dadi: Hai Ram! Phir?
+Caller: Unhone do lakh safe account mein bhej diye. Bechare. Aap kabhi mat bhejna.",,,1 Core
+38,Normal call that sounds like a scam,Normal call,,,Real police verification,"Caller: Namaste, local thane se constable Yadav. Aapke kirayedar ki verification karni hai.
+Dadi: Ji, batayiye.
+Caller: Kal subah thane aa jaiye, rent agreement aur Aadhaar ki copy le aana.",,,1 Core
+39,Normal call that sounds like a scam,Normal call,,,Hospital asks for an advance,"Caller: Apollo Hospital reception se. Aapke pati ka operation kal hai.
+Dadi: Ji, pata hai.
+Caller: Admission ke time 25,000 advance counter pe jama karna hoga. Card ya cash, jo aapko theek lage.",,,2 Extra
+40,Normal call that sounds like a scam,Normal call,,,EMI reminder,"Caller: Axis Bank ki taraf se reminder. Aapki 12,450 ki EMI paanch tareekh ko due hai.
+Dadi: Haan, account mein paise hain.
+Caller: Ji, auto debit ho jayega. Aap bank app se bhi dekh sakti hain. Dhanyavaad.",,,1 Core
+41,Normal call that sounds like a scam,Normal call,,,Pushy insurance agent,"Caller: Madam, LIC agent Verma bol raha hoon. Ye plan sirf is mahine hai, guaranteed bonus milta hai.
+Dadi: Abhi nahi chahiye.
+Caller: Soch lijiye, main ghar aa jaata hoon, papers dikha dunga. Koi jaldi nahi hai.",,,2 Extra
+42,Normal call that sounds like a scam,Normal call,,,Kirana bill on UPI,"Caller: Aunty, Gupta store se. Aapka 1,850 ka bill ho gaya, saaman bhej diya hai.
+Dadi: Achha, kaise doon?
+Caller: Shop pe QR laga hai, ya ladke ko cash de dena. Jab theek lage.",,,Optional
+43,Normal call that sounds like a scam,Normal call,,,Real KYC notice,"Caller: Madam, Canara Bank branch se. Aapka KYC is mahine renew karna hai.
+Dadi: Phone pe ho jayega?
+Caller: Nahi madam, phone pe nahi. Aadhaar aur PAN ki copy leke branch aa jaiye. Koi jaldi nahi.",,,1 Core
+44,Normal call that sounds like a scam,Normal call,,,Son discussing money,"Caller: Maa, maine aapke account mein 20,000 transfer kiye hain, dawai ke liye.
+Dadi: Achha beta, message aaya tha.
+Caller: Aur haan, bank wala koi OTP maange toh mat dena.",,,Optional
+45,Normal call that sounds like a scam,Normal call,,,Electricity outage notice,"Caller: Bijli vibhag ki soochna. Kal subah das se do baje tak aapke area mein bijli band rahegi.
+Dadi: Kyun?
+Caller: Line ka kaam chal raha hai. Bas yahi batana tha.",,,2 Extra
+46,Normal call that sounds like a scam,Normal call,,,Job interview,"Caller: Hello, TCS HR se Priya bol rahi hoon. Aapke pote ka resume shortlist hua hai.
+Dadi: Achha, uska number deti hoon.
+Caller: Ji. Interview guruwar ko office mein hai, koi fees nahi hai.",,,Optional
+47,Normal call that sounds like a scam,Normal call,,,Doctor asks for details,"Caller: Dr Mehta ke clinic se. Aapki report aa gayi hai.
+Dadi: Sab theek hai?
+Caller: Pehle confirm kar loon, aapki date of birth kya hai? Doctor saab aapko kal bulaya hai.",,,Optional
+48,Normal call that sounds like a scam,Normal call,,,Cashback the customer expected,"Caller: Beta bol raha hoon. Maa, Flipkart ka refund aa gaya kya?
+Dadi: Haan, 1,200 aaye hain.
+Caller: Achha, cashback bhi aayega. Kuch karna nahi hai, apne aap aa jayega.",,,2 Extra
+49,Normal call that sounds like a scam,Normal call,,,Wrong number,"Caller: Hello, Rajesh ji? Parcel pahuncha?
+Dadi: Yahan koi Rajesh nahi hai.
+Caller: Oh, sorry, galat number lag gaya. Maaf kijiye.",,,Optional
+50,Normal call that sounds like a scam,Normal call,,,"Everyday family chat, with numbers","Caller: Dadi, mera naya phone number likh lo. Nau, aath, ek, do, teen, chaar, paanch, chhah, saat, aath.
+Dadi: Ruko, phir bolo.
+Caller: Aur ghar ka gate code 4512 hai, Sunday ko aa rahe hain.",,,1 Core
+51,Own words (no script),Scam,Choose after the call,,Pretend to be from a government office and get money from me,Give the friend only the title. They use their own words.,,,1 Core
+52,Own words (no script),Scam,Choose after the call,,Pretend to be my relative in trouble,Give the friend only the title. They use their own words.,,,1 Core
+53,Own words (no script),Scam,Choose after the call,,"Get a code from my phone, any way you like",Give the friend only the title. They use their own words.,,,1 Core
+54,Own words (no script),Scam,Choose after the call,,Offer me something too good to be true,Give the friend only the title. They use their own words.,,,1 Core
+55,Own words (no script),Scam,Choose after the call,,Make me install something on my phone,Give the friend only the title. They use their own words.,,,1 Core
+56,Own words (no script),Scam,Choose after the call,,"Scare me, and don't ask for anything yet",Give the friend only the title. They use their own words.,,,1 Core
+57,Own words (no script),Scam,Choose after the call,,Call in your own language about a pretend scam you invent,Give the friend only the title. They use their own words.,,,1 Core
+58,Own words (no script),Normal call,,,"Just chat, and ask about my health",Give the friend only the title. They use their own words.,,,1 Core
+59,Own words (no script),Normal call,,,Call as a shop or delivery person about an order,Give the friend only the title. They use their own words.,,,1 Core
+60,Own words (no script),Normal call,,,Call as a real bank or office reminding me about something,Give the friend only the title. They use their own words.,,,1 Core
