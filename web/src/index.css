@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+/*
+  Design language: warm paper, ink, one forest-green accent (light) / charcoal + sage (dark).
+  The app was written against Tailwind's slate/cyan scales, so instead of touching
+  every class we re-map those scales to this palette (slate = paper → ink, cyan = accent).
+*/
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+
+  /* neutrals: 950 is the page, 900 raised surface, 800/700 hairlines, 100 is ink */
+  --color-slate-950: #f6f4ef;
+  --color-slate-900: #fdfcfa;
+  --color-slate-800: #ece8df;
+  --color-slate-700: #dcd7cb;
+  --color-slate-600: #bab4a5;
+  --color-slate-500: #8b867a;
+  --color-slate-400: #6d695f;
+  --color-slate-300: #4c4941;
+  --color-slate-200: #2f2d28;
+  --color-slate-100: #191815;
+
+  /* accent */
+  --color-cyan-500: #23402f;
+  --color-cyan-400: #2f5640;
+  --color-cyan-300: #2f5640;
+  --color-cyan-200: #23402f;
+
+  /* semantic colours, tuned for text on paper */
+  --color-red-500: #d2473a;
+  --color-red-400: #c2402f;
+  --color-red-300: #b23a2d;
+  --color-red-100: #7d261c;
+  --color-emerald-500: #3f8a5f;
+  --color-emerald-400: #3f8a5f;
+  --color-emerald-300: #2f6b4a;
+  --color-emerald-200: #265a3c;
+  --color-emerald-100: #1f4c33;
+  --color-amber-500: #c98a1d;
+  --color-amber-300: #94620f;
+  --color-amber-200: #7a4f0b;
+  --color-amber-100: #5f3d08;
+  --color-violet-500: #6b58b3;
+  --color-violet-300: #5846a0;
+}
+
+/* Dark theme: same names, new values. Applied via <html data-theme="dark"> (see lib/theme.tsx). */
+:root[data-theme="dark"] {
+  --color-slate-950: #121311;
+  --color-slate-900: #1a1b18;
+  --color-slate-800: #262723;
+  --color-slate-700: #363732;
+  --color-slate-600: #55564f;
+  --color-slate-500: #85867d;
+  --color-slate-400: #a09f95;
+  --color-slate-300: #c3c2b8;
+  --color-slate-200: #dddcd2;
+  --color-slate-100: #f1f0e8;
+
+  --color-cyan-500: #a6d4b5;
+  --color-cyan-400: #bfe3cb;
+  --color-cyan-300: #a6d4b5;
+  --color-cyan-200: #cfe9d8;
+
+  --color-red-500: #e5675a;
+  --color-red-400: #ec7a6d;
+  --color-red-300: #f08f84;
+  --color-red-100: #f9c9c2;
+  --color-emerald-500: #4fa578;
+  --color-emerald-400: #5db386;
+  --color-emerald-300: #7fcaa0;
+  --color-emerald-200: #a6dcbd;
+  --color-emerald-100: #c5ead5;
+  --color-amber-500: #d9a03a;
+  --color-amber-300: #e8bb62;
+  --color-amber-200: #f0cf8c;
+  --color-amber-100: #f6e0b0;
+  --color-violet-500: #8a78d0;
+  --color-violet-300: #b2a4e6;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    -webkit-tap-highlight-color: transparent;
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    letter-spacing: -0.003em;
+    overscroll-behavior-y: none;
+  }
+  h1, h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  ::selection {
+    background: #d9e6dc;
+  }
+  :root[data-theme="dark"] ::selection {
+    background: #34503f;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-cyan-400);
+    outline-offset: 2px;
+  }
+  button, a, select, input {
+    touch-action: manipulation;
+  }
+  input, select, textarea {
+    transition: border-color 120ms, box-shadow 120ms;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-cyan-400);
+    box-shadow: 0 0 0 3px rgb(47 86 64 / 0.12);
+  }
+  :root[data-theme="dark"] input:focus,
+  :root[data-theme="dark"] select:focus,
+  :root[data-theme="dark"] textarea:focus {
+    box-shadow: 0 0 0 3px rgb(166 212 181 / 0.18);
+  }
+}
+
+/* Phone rules (from the PWA session): keep clear of the notch and the home bar. */
+.app-header {
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+.app-bottom-nav {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (max-width: 639px) {
+  /* Larger everything on a phone: many readers are older, and rem scales the whole layout. */
+  html {
+    font-size: 17px;
+  }
+
+  /* Room for the bottom navigation. */
+  .app-main {
+    padding-bottom: calc(6rem + env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
