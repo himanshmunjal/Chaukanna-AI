@@ -41,6 +41,7 @@ func (h *Handler) ExotelStream(c *gin.Context) {
 	if err != nil {
 		return
 	}
+	conn.SetReadLimit(maxStreamMessage)
 	defer conn.Close()
 
 	leg := &exotelLeg{conn: conn}

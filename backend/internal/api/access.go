@@ -8,6 +8,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"log"
+	"net"
 	"net/http"
 	"net/url"
 	"slices"
@@ -55,7 +56,27 @@ func (s *Server) isFamily(c *gin.Context) bool {
 			return true
 		}
 	}
-	return !s.cfg.DemoMode && s.cfg.DashboardPassword == "" && s.cfg.DashboardToken == ""
+	open := !s.cfg.DemoMode && s.cfg.DashboardPassword == "" && s.cfg.DashboardToken == ""
+	return open && directLocalRequest(c.Request)
+}
+
+// directLocalRequest is true only for a request made on this machine without a proxy
+// or tunnel in between. With no password set, the dashboard is open only to these, so
+// an ngrok tunnel or a hosted copy without DASHBOARD_PASSWORD shows the login page
+// instead of everyone's calls. Tunnels and proxies add X-Forwarded-For (ngrok does,
+// and Vite's dev proxy passes it on), so a tunnelled request never counts as local.
+func directLocalRequest(r *http.Request) bool {
+	for _, h := range []string{"X-Forwarded-For", "X-Forwarded-Host", "X-Real-Ip", "Forwarded", "Cf-Connecting-Ip"} {
+		if r.Header.Get(h) != "" {
+			return false
+		}
+	}
+	host, _, err := net.SplitHostPort(r.RemoteAddr)
+	if err != nil {
+		return false
+	}
+	ip := net.ParseIP(host)
+	return ip != nil && ip.IsLoopback()
 }
 
 // sessionValue is "<expiry>.<signature>". The key comes from the password, so changing
@@ -97,13 +118,18 @@ func (s *Server) me(c *gin.Context) {
 		"login_required": !family && !s.cfg.DemoMode,
 		"can_login":      s.cfg.DashboardPassword != "",
 		"logged_in":      family && s.cfg.DashboardPassword != "",
+		"shared_key":     !family && s.sharedKey(),
 	})
 }
 
 // POST /api/login {password}
 func (s *Server) login(c *gin.Context) {
+	if !s.allowedOrigin(c) {
+		c.JSON(http.StatusForbidden, gin.H{"error": "this site may not connect here"})
+		return
+	}
 	if s.cfg.DashboardPassword == "" {
-		c.JSON(http.StatusNotFound, gin.H{"error": "login is not set up"})
+		c.JSON(http.StatusNotFound, gin.H{"error": "login is not set up: set DASHBOARD_PASSWORD in backend/.env, or open the dashboard on the same computer as the backend"})
 		return
 	}
 	// Counted per address and overall, so guessing is slow even from many addresses.
@@ -130,6 +156,10 @@ func (s *Server) login(c *gin.Context) {
 
 // POST /api/logout
 func (s *Server) logout(c *gin.Context) {
+	if !s.allowedOrigin(c) {
+		c.JSON(http.StatusForbidden, gin.H{"error": "this site may not connect here"})
+		return
+	}
 	c.SetSameSite(http.SameSiteStrictMode)
 	c.SetCookie(sessionCookie, "", -1, "/", "", secureRequest(c), true)
 	c.JSON(http.StatusOK, gin.H{"ok": true})
@@ -152,10 +182,14 @@ func (s *Server) identify(c *gin.Context) {
 	c.Set(hub.OwnerKey, s.visitorID(c))
 }
 
-// allowedOrigin stops another website's page from opening a WebSocket with this
-// browser's cookies. Same-site cookies do most of this; it is a second lock.
+// allowedOrigin stops another website's page from opening a WebSocket, or sending a
+// POST or DELETE, with this browser's cookies (cross-site request forgery). Same-site
+// cookies do most of this; it is a second lock. Plain reads are left alone, and so are
+// requests without an Origin header (scripts and curl), because browsers always send
+// one on cross-site POSTs and WebSockets.
 func (s *Server) allowedOrigin(c *gin.Context) bool {
-	if !strings.EqualFold(c.GetHeader("Upgrade"), "websocket") {
+	safe := c.Request.Method == http.MethodGet || c.Request.Method == http.MethodHead || c.Request.Method == http.MethodOptions
+	if safe && !strings.EqualFold(c.GetHeader("Upgrade"), "websocket") {
 		return true
 	}
 	origin := c.GetHeader("Origin")
@@ -225,11 +259,32 @@ func (s *Server) clientsFor(c *gin.Context) (*stt.Client, *tts.Client) {
 	if key := strings.TrimSpace(c.GetHeader(gnaniKeyHeader)); key != "" {
 		return s.svc.Prisma.WithKey(key), s.svc.TTS.WithKey(key)
 	}
-	if c.GetBool(familyKey) {
+	if c.GetBool(familyKey) || s.sharedKey() {
+		// A shared-key visitor's listening is counted where it happens: see listen.
 		return s.svc.Prisma, s.svc.TTS
 	}
 	return nil, s.svc.TTS.CacheOnly()
 }
+
+// sharedKey is true when demo visitors may use this server's Gnani key.
+func (s *Server) sharedKey() bool {
+	return s.cfg.DemoMode && s.svc.SharedListening != nil && s.svc.Prisma.Enabled()
+}
+
+// listen is called just before transcribing a visitor's audio. A visitor on the shared
+// key uses up one session of the daily allowance; everyone else passes.
+func (s *Server) listen(c *gin.Context) bool {
+	if c.GetBool(familyKey) || strings.TrimSpace(c.GetHeader(gnaniKeyHeader)) != "" || !s.sharedKey() {
+		return true
+	}
+	if s.svc.SharedListening() {
+		return true
+	}
+	c.JSON(http.StatusTooManyRequests, gin.H{"error": sharedLimitMessage})
+	return false
+}
+
+const sharedLimitMessage = "The demo's shared Gnani key has reached today's limit. Add your own Gnani key, or paste the words instead."
 
 func (s *Server) noVoiceMessage(c *gin.Context) string {
 	if c.GetBool(familyKey) {
@@ -245,6 +300,7 @@ func (s *Server) noVoiceMessage(c *gin.Context) string {
 type limits struct {
 	login, loginAll                   *ratelimit.Limiter
 	analyze, drill, simulate, speaker *ratelimit.Limiter
+	stepIn                            *ratelimit.Limiter
 	perIP                             *ratelimit.Limiter
 }
 
@@ -256,6 +312,7 @@ func newLimits() *limits {
 		drill:    ratelimit.New(40, time.Minute),
 		simulate: ratelimit.New(6, time.Minute),
 		speaker:  ratelimit.New(4, time.Minute),
+		stepIn:   ratelimit.New(20, time.Minute),
 		// A generous cap across everything, so clearing cookies doesn't escape the limits.
 		perIP: ratelimit.New(120, time.Minute),
 	}

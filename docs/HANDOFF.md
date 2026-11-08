@@ -58,7 +58,7 @@ EVON_INTERVAL_SECONDS=15 DASHBOARD_PASSWORD=choose-a-password go run ./cmd/serve
 ## Open problems
 
 - **Exotel warning not heard on #31:** cause unknown. On a fake Exotel client the audio left the server valid. `exotel.go` logs `sent clip-N` and `played clip-N` from Exotel's `mark` reply, but the `played` path has never been confirmed live, because no log was saved. Show the warning on speakerphone in the demo unless it's heard on Exotel again. If `played` appears but nobody hears it, look at the merge. If it's missing or instant, send audio at speaking pace and check the Exotel flow is Voicebot.
-- **`DASHBOARD_PASSWORD` not set at last check,** so `/api/calls` answered without login through ngrok.
+- **`DASHBOARD_PASSWORD` not set at last check.** Since 8 November the dashboard opens without it only on localhost, so through ngrok it now asks for a login. Set it before testing from a phone.
 - **Prisma changes words:** on #58 "jurmana" became "पक्का जरूर", and on #57 the final demand is missing. No LLM can recover those.
 - **False-warning risk that stays even with an LLM:** a direct-demand rule hit can't be overruled. Mixed-script safety advice can raise a flag, as on #57 ("OTP share मत कीजिए").
 
@@ -71,7 +71,7 @@ With `LLM_PLUS_RULES=true` and a model configured, the rules run on every line a
 | Area | Status |
 |---|---|
 | Speakerphone, Telegram alerts | Working on real calls |
-| Exotel (ExoPhone 08047290103, 7-day trial) | Worked on #28-30, then the problem above. Token goes in the URL path: `/ws/exotel/<token>` |
+| Exotel (ExoPhone, 7-day trial) | Worked on #28-30, then the problem above. Token goes in the URL path: `/ws/exotel/<token>` |
 | Screen Mode on a real forwarded call | Not tested |
 | Demo mode, key per visitor, login, rate limits, encryption, Docker image | Tested locally, not hosted |
 | Phone app and 10 interface languages | Checked at phone size in headless Chrome, not on a real phone. Machine-translated and unreviewed; `npm run check:i18n` guards them. Advice text in `backend/internal/report/report.go` is matched by its exact English |

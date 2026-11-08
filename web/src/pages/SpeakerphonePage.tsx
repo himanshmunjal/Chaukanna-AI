@@ -118,7 +118,7 @@ export function SpeakerphonePage() {
         <div className="flex flex-wrap items-center gap-6">
           <button
             onClick={running ? stop : start}
-            disabled={!running && (!!micProblem || (demoVisitor && !hasKey))}
+            disabled={!running && (!!micProblem || (demoVisitor && !hasKey && !access.shared_key))}
             aria-label={running ? t('Stop listening') : t('Start listening')}
             className="mx-auto rounded-full disabled:opacity-50 sm:mx-0"
           >
@@ -174,7 +174,7 @@ export function SpeakerphonePage() {
             {running ? (
               <Button large variant="danger" onClick={stop}>■ {t('Stop listening')}</Button>
             ) : (
-              <Button large onClick={start} disabled={!!micProblem || (demoVisitor && !hasKey)}>▶ {t('Start listening')}</Button>
+              <Button large onClick={start} disabled={!!micProblem || (demoVisitor && !hasKey && !access.shared_key)}>▶ {t('Start listening')}</Button>
             )}
           </div>
         </div>

@@ -33,9 +33,9 @@ export function TranscriptView({ lines, partial, flags }: { lines: TranscriptLin
             key={line.id ?? `${line.t}-${i}`}
             className={`flex gap-3 rounded-lg px-3 py-2 ${flagged ? 'bg-red-500/10 ring-1 ring-red-500/30' : ''} ${line.speaker === 'chaukanna' ? 'bg-cyan-500/10' : ''}`}
           >
-            <span className="w-10 shrink-0 pt-0.5 font-mono text-xs text-slate-500">{formatSeconds(line.t)}</span>
+            <span className="w-10 shrink-0 pt-0.5 font-mono text-xs text-slate-400">{formatSeconds(line.t)}</span>
             <div>
-              <span className="text-[11px] text-slate-500">{t(speaker.name)}</span>
+              <span className="text-[11px] text-slate-400">{t(speaker.name)}</span>
               <p className={`leading-relaxed ${speaker.className}`}>{line.text}</p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export function TranscriptView({ lines, partial, flags }: { lines: TranscriptLin
 
       {partial && (
         <div className="flex gap-3 px-3 py-2 opacity-60">
-          <span className="w-10 shrink-0 font-mono text-xs text-slate-500">…</span>
+          <span className="w-10 shrink-0 font-mono text-xs text-slate-400">…</span>
           <p className="italic text-slate-300">{partial}</p>
         </div>
       )}

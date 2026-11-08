@@ -42,13 +42,19 @@
 package api
 
 import (
+	"bytes"
+	"compress/gzip"
+	"fmt"
 	"log"
 	"mime"
 	"net/http"
 	"os"
 	"path/filepath"
+	"regexp"
 	"slices"
 	"strings"
+	"sync"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
@@ -84,6 +90,9 @@ type Services struct {
 	TTS      *tts.Client
 	Telegram *telegram.Client
 	Detector detector.Config
+	// SharedListening is set when demo visitors may listen on this server's Gnani key.
+	// Each call uses up one listening session from the shared daily allowance.
+	SharedListening func() bool
 }
 
 // NewRouter builds the Gin engine with every route.
@@ -97,7 +106,7 @@ func NewRouter(cfg config.Config, db *gorm.DB, h *hub.Hub, sessions *session.Man
 	if err := r.SetTrustedProxies(cfg.TrustedProxies); err != nil {
 		log.Printf("api: TRUSTED_PROXIES: %v", err)
 	}
-	r.Use(gin.Logger(), gin.Recovery(), corsMiddleware(cfg.CORSOrigins))
+	r.Use(gin.LoggerWithFormatter(redactedLog), gin.Recovery(), securityHeaders, corsMiddleware(cfg.CORSOrigins))
 	s.limits = newLimits()
 
 	r.GET("/health", s.health)
@@ -141,8 +150,8 @@ func NewRouter(cfg config.Config, db *gorm.DB, h *hub.Hub, sessions *session.Man
 	family.GET("/users/:id/telegram-link", s.telegramLink)
 	family.POST("/calls/:id/label", s.labelCall)
 
-	api.POST("/calls/:id/warn", s.warnNow)
-	api.POST("/calls/:id/speak", s.speakIntoCall)
+	api.POST("/calls/:id/warn", s.visitorLimit(s.limits.stepIn), s.warnNow)
+	api.POST("/calls/:id/speak", s.visitorLimit(s.limits.stepIn), s.speakIntoCall)
 	api.POST("/calls/:id/safe", s.markCallSafe)
 	api.POST("/calls/:id/outcome", s.setOutcome)
 	api.GET("/calls/:id/report", s.callReport)
@@ -170,6 +179,36 @@ func corsMiddleware(origins []string) gin.HandlerFunc {
 		}
 		c.Next()
 	}
+}
+
+// securityHeaders stops the dashboard being framed by another site (where "Warn now" or
+// "Speak" could be clicked by trickery), stops browsers guessing file types, and keeps
+// call addresses out of Referer headers.
+func securityHeaders(c *gin.Context) {
+	h := c.Writer.Header()
+	h.Set("X-Content-Type-Options", "nosniff")
+	h.Set("X-Frame-Options", "DENY")
+	h.Set("Content-Security-Policy", "frame-ancestors 'none'")
+	h.Set("Referrer-Policy", "same-origin")
+	h.Set("Permissions-Policy", "camera=(), geolocation=(), microphone=(self)")
+	c.Next()
+}
+
+var (
+	exotelTokenPath = regexp.MustCompile(`^/ws/exotel/[^/?]+`)
+	secretQuery     = regexp.MustCompile(`(?i)\b(token|key|auth)=[^&]*`)
+)
+
+// redactedLog is Gin's request log without secrets: the Exotel stream token is part of
+// its path, and a dashboard token can arrive as ?token= on a WebSocket.
+func redactedLog(p gin.LogFormatterParams) string {
+	path := exotelTokenPath.ReplaceAllString(p.Path, "/ws/exotel/[redacted]")
+	path = secretQuery.ReplaceAllString(path, "$1=[redacted]")
+	if p.Latency > time.Minute {
+		p.Latency = p.Latency.Truncate(time.Second)
+	}
+	return fmt.Sprintf("[GIN] %v | %3d | %13v | %15s | %-7s %#v\n%s",
+		p.TimeStamp.Format("2006/01/02 - 15:04:05"), p.StatusCode, p.Latency, p.ClientIP, p.Method, path, p.ErrorMessage)
 }
 
 func (s *Server) health(c *gin.Context) {
@@ -204,9 +243,56 @@ func (s *Server) serveDashboard(r *gin.Engine) {
 		// Clean a rooted path, so ".." can never leave WEB_DIST.
 		file := filepath.Join(s.cfg.WebDist, filepath.Clean("/"+c.Request.URL.Path))
 		if info, err := os.Stat(file); err == nil && !info.IsDir() {
+			serveStatic(c, file, info)
+			return
+		}
+		if info, err := os.Stat(index); err == nil {
+			serveStatic(c, index, info)
+			return
+		}
+		c.Status(http.StatusNotFound)
+	})
+}
+
+// compressible are the built file types worth gzipping. Images and fonts already are.
+var compressible = map[string]bool{".js": true, ".css": true, ".html": true, ".svg": true, ".json": true, ".webmanifest": true, ".txt": true}
+
+// gzipCache holds each built file compressed once, keyed by path and modification time.
+var gzipCache sync.Map
+
+// serveStatic sends a built file. Files under /assets/ have a content hash in their
+// name, so browsers may keep them for a year; everything else is checked each time,
+// so a new deploy shows at once. Text files are gzipped for browsers that accept it.
+func serveStatic(c *gin.Context, file string, info os.FileInfo) {
+	if strings.HasPrefix(c.Request.URL.Path, "/assets/") {
+		c.Header("Cache-Control", "public, max-age=31536000, immutable")
+	} else {
+		c.Header("Cache-Control", "no-cache")
+	}
+	ext := filepath.Ext(file)
+	if !compressible[ext] || !strings.Contains(c.GetHeader("Accept-Encoding"), "gzip") {
+		c.File(file)
+		return
+	}
+	key := file + "|" + info.ModTime().String()
+	body, ok := gzipCache.Load(key)
+	if !ok {
+		raw, err := os.ReadFile(file)
+		if err != nil {
 			c.File(file)
 			return
 		}
-		c.File(index)
-	})
+		var buf bytes.Buffer
+		zw, _ := gzip.NewWriterLevel(&buf, gzip.BestCompression)
+		_, _ = zw.Write(raw)
+		_ = zw.Close()
+		body, _ = gzipCache.LoadOrStore(key, buf.Bytes())
+	}
+	contentType := mime.TypeByExtension(ext)
+	if contentType == "" {
+		contentType = "application/octet-stream"
+	}
+	c.Header("Content-Encoding", "gzip")
+	c.Header("Vary", "Accept-Encoding")
+	c.Data(http.StatusOK, contentType, body.([]byte))
 }

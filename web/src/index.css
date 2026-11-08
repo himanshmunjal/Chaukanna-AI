@@ -160,3 +160,9 @@
     transition: none !important;
   }
 }
+
+/* Keep room for the scrollbar, so the layout does not jump sideways when a page grows
+   taller than the window (for example when a call finishes loading). */
+html {
+  scrollbar-gutter: stable;
+}

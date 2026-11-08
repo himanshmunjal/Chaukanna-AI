@@ -40,7 +40,11 @@ const (
 
 func (s *Server) findUser(c *gin.Context) (models.ProtectedUser, bool) {
 	var u models.ProtectedUser
-	if err := s.db.First(&u, c.Param("id")).Error; err != nil {
+	id, ok := pathID(c)
+	if !ok {
+		return u, false
+	}
+	if err := s.db.First(&u, id).Error; err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "person not found"})
 		return u, false
 	}
@@ -161,7 +165,9 @@ func TelegramLinker(db *gorm.DB) telegram.LinkHandler {
 		if len(users) == 0 {
 			return "This link is not valid. Please open a new one from the Chaukanna dashboard."
 		}
-		db.Model(&users[0]).Update("telegram_chat_id", models.Encrypt(chatID))
+		// The code works once: a forwarded or leaked link can't move the alerts to
+		// another chat later. The dashboard makes a new link when it is needed.
+		db.Model(&users[0]).Updates(map[string]any{"telegram_chat_id": models.Encrypt(chatID), "telegram_link_code": ""})
 		return fmt.Sprintf("Linked. You will get an alert here if %s is on a likely scam call.", users[0].Name)
 	}
 }
@@ -170,10 +176,14 @@ func TelegramLinker(db *gorm.DB) telegram.LinkHandler {
 // Family actions on a call
 // ---------------------------------------------------------------------------
 
-func callID(c *gin.Context) (uint, bool) {
+func callID(c *gin.Context) (uint, bool) { return pathID(c) }
+
+// pathID parses the :id in the path as a number. Never pass c.Param("id") to GORM's
+// First or Delete directly: GORM treats a non-numeric string there as raw SQL.
+func pathID(c *gin.Context) (uint, bool) {
 	id, err := strconv.ParseUint(c.Param("id"), 10, 32)
-	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "bad call id"})
+	if err != nil || id == 0 {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "bad id"})
 		return 0, false
 	}
 	return uint(id), true
@@ -288,9 +298,13 @@ func (s *Server) setOutcome(c *gin.Context) {
 // GET /api/calls/:id/report
 func (s *Server) callReport(c *gin.Context) {
 	var call models.Call
+	id, ok := pathID(c)
+	if !ok {
+		return
+	}
 	err := s.ownCalls(c).Preload("ProtectedUser").
 		Preload("Flags", func(db *gormDB) *gormDB { return db.Order("time_sec, id") }).
-		First(&call, c.Param("id")).Error
+		First(&call, id).Error
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "call not found"})
 		return
@@ -331,6 +345,9 @@ func (s *Server) analyze(c *gin.Context) {
 		prisma, _ := s.clientsFor(c)
 		if !prisma.Enabled() {
 			c.JSON(http.StatusServiceUnavailable, gin.H{"error": s.noVoiceMessage(c)})
+			return
+		}
+		if !s.listen(c) {
 			return
 		}
 		ctx, cancel := context.WithTimeout(c.Request.Context(), 3*time.Minute)
@@ -501,6 +518,9 @@ func (s *Server) drillTurn(c *gin.Context) {
 			}
 			if !prisma.Enabled() {
 				c.JSON(http.StatusServiceUnavailable, gin.H{"error": s.noVoiceMessage(c)})
+				return
+			}
+			if !s.listen(c) {
 				return
 			}
 			if heard, err = prisma.TranscribeFile(ctx, name, data, sc.Lang); err != nil {

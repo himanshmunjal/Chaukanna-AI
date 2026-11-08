@@ -19,17 +19,22 @@ import (
 // Config holds all settings for the backend.
 type Config struct {
 	// --- Server ---
-	Port              string   // HTTP port, e.g. "8080"
-	PublicURL         string   // Public https URL of this backend (ngrok). Twilio/Exotel connect here.
-	DashboardURL      string   // URL of the React dashboard. Used in alert links.
-	DashboardToken    string   // Optional shared secret for scripts and the API. Empty = no token.
-	DashboardPassword string   // Login password for the family dashboard. Empty = no login page.
-	DemoMode          bool     // Public demo: visitors are isolated, spend nothing, and alert nobody.
-	TrustedProxies    []string // Proxies whose X-Forwarded-For is believed (for rate limits behind a host).
-	EncryptionKey     string   // Passphrase that encrypts what was said on calls. Empty = stored readable.
-	TelephonyTestMode bool     // Accept unverified telephony streams. Only for cmd/smoketest on a laptop.
-	ExotelStreamToken string   // Secret in the Exotel stream URL. Empty = Exotel is off.
-	CORSOrigins       []string // Allowed browser origins for the API.
+	Port              string // HTTP port, e.g. "8080"
+	PublicURL         string // Public https URL of this backend (ngrok). Twilio/Exotel connect here.
+	DashboardURL      string // URL of the React dashboard. Used in alert links.
+	DashboardToken    string // Optional shared secret for scripts and the API. Empty = no token.
+	DashboardPassword string // Login password for the family dashboard. Empty = no login page.
+	DemoMode          bool   // Public demo: visitors are isolated, spend nothing, and alert nobody.
+	// DemoSharedKey lets demo visitors without their own Gnani key listen (microphone,
+	// recordings, spoken drill answers) on this server's key, up to DemoSharedDailyLimit
+	// listening sessions a day across all visitors. Off by default: it spends credits.
+	DemoSharedKey        bool
+	DemoSharedDailyLimit int
+	TrustedProxies       []string // Proxies whose X-Forwarded-For is believed (for rate limits behind a host).
+	EncryptionKey        string   // Passphrase that encrypts what was said on calls. Empty = stored readable.
+	TelephonyTestMode    bool     // Accept unverified telephony streams. Only for cmd/smoketest on a laptop.
+	ExotelStreamToken    string   // Secret in the Exotel stream URL. Empty = Exotel is off.
+	CORSOrigins          []string // Allowed browser origins for the API.
 
 	// --- Database ---
 	DatabaseURL string // Postgres DSN. Leave empty to use SQLite.
@@ -105,17 +110,19 @@ func Load() Config {
 	}
 
 	return Config{
-		Port:              getString("PORT", "8080"),
-		PublicURL:         strings.TrimRight(getString("PUBLIC_URL", ""), "/"),
-		DashboardURL:      strings.TrimRight(getString("DASHBOARD_URL", "http://localhost:5173"), "/"),
-		DashboardToken:    getString("DASHBOARD_TOKEN", ""),
-		DashboardPassword: getString("DASHBOARD_PASSWORD", ""),
-		DemoMode:          getString("DEMO_MODE", "") == "true",
-		TrustedProxies:    getList("TRUSTED_PROXIES", nil),
-		EncryptionKey:     getString("ENCRYPTION_KEY", ""),
-		TelephonyTestMode: getString("TELEPHONY_TEST_MODE", "") == "true",
-		ExotelStreamToken: getString("EXOTEL_STREAM_TOKEN", ""),
-		CORSOrigins:       getList("CORS_ORIGINS", []string{"http://localhost:5173"}),
+		Port:                 getString("PORT", "8080"),
+		PublicURL:            strings.TrimRight(getString("PUBLIC_URL", ""), "/"),
+		DashboardURL:         strings.TrimRight(getString("DASHBOARD_URL", "http://localhost:5173"), "/"),
+		DashboardToken:       getString("DASHBOARD_TOKEN", ""),
+		DashboardPassword:    getString("DASHBOARD_PASSWORD", ""),
+		DemoMode:             getString("DEMO_MODE", "") == "true",
+		DemoSharedKey:        getString("DEMO_SHARED_KEY", "") == "true",
+		DemoSharedDailyLimit: getInt("DEMO_SHARED_DAILY_LIMIT", 200),
+		TrustedProxies:       getList("TRUSTED_PROXIES", nil),
+		EncryptionKey:        getString("ENCRYPTION_KEY", ""),
+		TelephonyTestMode:    getString("TELEPHONY_TEST_MODE", "") == "true",
+		ExotelStreamToken:    getString("EXOTEL_STREAM_TOKEN", ""),
+		CORSOrigins:          getList("CORS_ORIGINS", []string{"http://localhost:5173"}),
 
 		DatabaseURL: getString("DATABASE_URL", ""),
 		SQLitePath:  getString("SQLITE_PATH", "chaukanna.db"),

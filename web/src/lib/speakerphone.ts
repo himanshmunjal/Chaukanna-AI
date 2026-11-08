@@ -77,7 +77,8 @@ export async function startSpeakerphone(opts: SpeakerphoneOptions): Promise<Spea
   const socket = new WebSocket(speakerSocketURL({ user_phone: opts.userPhone, mode: opts.mode, language: opts.language }))
   socket.binaryType = 'arraybuffer'
   socket.onopen = () => {
-    if (opts.gnaniKey) socket.send(JSON.stringify({ type: 'auth', key: opts.gnaniKey }))
+    // A demo visitor always sends this first; an empty key asks for the demo's shared key.
+    if (opts.gnaniKey !== undefined) socket.send(JSON.stringify({ type: 'auth', key: opts.gnaniKey }))
   }
 
   let muted = false

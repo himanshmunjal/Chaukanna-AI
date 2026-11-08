@@ -1,0 +1,48 @@
+# Render Blueprint: a public demo of Chaukanna for reviewers and judges.
+# In Render: New → Blueprint → pick this repository. See docs/DEPLOY.md.
+services:
+  - type: web
+    name: chaukanna
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    # "starter" stays awake. "free" sleeps after 15 idle minutes, and the next visitor
+    # then waits about a minute, which looks broken to a judge.
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8080"
+      # Visitors get an isolated demo: their own calls only, deleted after an hour, no real alerts.
+      - key: DEMO_MODE
+        value: "true"
+      # Lets judges use the microphone and recordings without their own Gnani key,
+      # up to the daily limit below. Set to "false" to make visitors bring a key.
+      - key: DEMO_SHARED_KEY
+        value: "true"
+      - key: DEMO_SHARED_DAILY_LIMIT
+        value: "200"
+      # Your Gnani key: entered in the Render dashboard, never committed.
+      - key: GNANI_API_KEY
+        sync: false
+      # Family login (People page, Telegram, family voice). Render generates it; copy it from
+      # the Environment tab if you want to give judges the family view.
+      - key: DASHBOARD_PASSWORD
+        generateValue: true
+      - key: ENCRYPTION_KEY
+        generateValue: true
+      # The public address, e.g. https://chaukanna.onrender.com, so links in alerts work.
+      - key: DASHBOARD_URL
+        sync: false
+      - key: TRUSTED_PROXIES
+        value: 10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+      - key: STORE_TRANSCRIPTS
+        value: flagged
+      # Optional extras.
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: EVON_BASE_URL
+        sync: false
+      - key: EVON_MODEL
+        sync: false
+      - key: EVON_API_KEY
+        sync: false

@@ -10,7 +10,9 @@ Reasoning uses any OpenAI-compatible model. Evon is the target and is not yet on
 
 `#GnaniAI` `#GreatIndianAIInternshipChallenge`
 
-[One-page pitch](PITCH.md)
+[One-page pitch](PITCH.md) · [User manual](docs/USER_MANUAL.md)
+
+**New here? The [User manual](docs/USER_MANUAL.md) sets it up from scratch and gives a 10-minute guided tour, with no API keys needed.**
 
 </div>
 
@@ -240,7 +242,7 @@ These are design targets, not measurements.
 
 | Layer | Technology |
 |---|---|
-| Backend | **Go 1.25**, **Gin** (HTTP), **GORM** (ORM), `gorilla/websocket`, `godotenv` |
+| Backend | **Go 1.26**, **Gin** (HTTP), **GORM** (ORM), `gorilla/websocket`, `godotenv` |
 | Database | SQLite by default (pure Go, zero setup) · Postgres via `DATABASE_URL` |
 | Frontend | **React 18 + Vite + TypeScript**, **Tailwind CSS v4**, React Router |
 | Telephony | Exotel Voicebot (tested on real calls) **or** Twilio Media Streams (bidirectional WebSocket) |
@@ -298,7 +300,7 @@ chaukanna/
 │   ├── charts/                       # the charts in this README
 │   ├── scripts/                      # draw the charts, convert the CSV
 │   └── results.md                    # the numbers, with their caveats
-├── docs/                             # architecture, competitive analysis, test-call scripts, handoff
+├── docs/                             # user manual, deployment, architecture, competitive analysis, test-call scripts
 ├── deploy/evon/                      # running Evon on your own GPU
 └── Dockerfile                        # one container: backend + dashboard
 ```
@@ -307,9 +309,11 @@ chaukanna/
 
 ## Getting started
 
+For a step-by-step version with a guided tour and what you should see at each step, see the [User manual](docs/USER_MANUAL.md).
+
 ### Prerequisites
 
-- Go 1.25 and Node 20+
+- Go 1.26 and Node 20+
 - **Nothing else is needed to try the simulator.** Every integration is optional and switches on when its keys are set.
 - For real calls: a Gnani API key, and for a phone number, an Exotel or Twilio account and `ngrok`.
 
@@ -349,7 +353,7 @@ cd backend && go run ./cmd/gnanicheck
 
 Open http://localhost:5173/speakerphone, press **Start listening** and allow the microphone. Put the call on speaker next to the laptop. The warning plays through the speakers, and the microphone pauses while it plays.
 
-- **Browser on a second phone:** the microphone needs https, so run `ngrok http 5173` and open that address. Set `DASHBOARD_PASSWORD` first.
+- **Browser on a second phone:** the microphone needs https, so run `ngrok http 5173` and open that address. Set `DASHBOARD_PASSWORD` first: through a tunnel, the dashboard asks for it.
 - **Browser on the same phone as the call:** this usually can't work, because the call takes the microphone. The page warns you if the microphone hears nothing.
 
 ### 5. Connect a real phone number (optional)
@@ -420,7 +424,7 @@ cd backend && go run ./cmd/smoketest            # add -skip-streams to save Gnan
 | GET | `/api/users/:id/telegram-link` | private Telegram link |
 | GET/POST | `/api/drill/scenarios`, `/api/drill/turn` | Scam Drill |
 
-With nothing set, the API is open, for local use. `DASHBOARD_PASSWORD` adds a login page (`POST /api/login`, `/api/logout`, `GET /api/me`). `DASHBOARD_TOKEN` lets scripts use `Authorization: Bearer <token>`. Visitors in demo mode may send `X-Gnani-Key` to use their own Gnani key.
+With nothing set, the API is open only to requests from the same computer, for local use. `DASHBOARD_PASSWORD` adds a login page (`POST /api/login`, `/api/logout`, `GET /api/me`). `DASHBOARD_TOKEN` lets scripts use `Authorization: Bearer <token>`. Visitors in demo mode may send `X-Gnani-Key` to use their own Gnani key.
 
 ---
 
@@ -517,7 +521,7 @@ python3 ../benchmark/scripts/make-charts.py   # redraw the charts from the saved
 ### Testing with real friends' calls
 
 1. **Set up:** keep the phone call on speaker next to a laptop, and open http://localhost:5173/speakerphone on the laptop.
-   - **Browser on a second phone:** the microphone needs https, so run `ngrok http 5173` and open that https address. Set `DASHBOARD_PASSWORD` first, because anyone with the address can reach the dashboard.
+   - **Browser on a second phone:** the microphone needs https, so run `ngrok http 5173` and open that https address. Set `DASHBOARD_PASSWORD` first: through a tunnel, the dashboard asks for it.
    - **Browser on the same phone as the call:** this usually can't work, because the call takes the microphone. The page warns you if the microphone hears nothing.
 2. **Label each call:** after the call, open it and use **Test label**. Choose Scam and its type, or Normal call. Label what your friend intended, not what Chaukanna decided. The Calls page shows your count.
 3. **Export and score once, after all the calls:**
@@ -574,15 +578,18 @@ Scam scripts are written from **public** advisories and news reports (I4C / cybe
 
 ## Hosting and the public demo
 
+**Deploying for reviewers or judges?** Follow [docs/DEPLOY.md](docs/DEPLOY.md): a one-click Render blueprint (`render.yaml`), a checklist, and a message to send the panel. On a first visit, the app opens its own **Guide** with a 10-minute tour.
+
 The Dockerfile builds one container with the backend and the dashboard. The microphone needs https, so host it somewhere that provides it. Set `DASHBOARD_URL` to the public address, or the links in alerts won't open on phones.
 
 | Setting | Use |
 |---|---|
-| `DASHBOARD_PASSWORD` | Login page for the family's data. Always set this on a hosted copy |
+| `DASHBOARD_PASSWORD` | Login page for the family's data. Required on a hosted copy: without it, the dashboard opens only on localhost. Don't use `VITE_DASHBOARD_TOKEN` instead, because it gets built into the page where anyone can read it |
 | `ENCRYPTION_KEY` | Encrypts what was said on calls, voice models and chat ids. If you lose it, those rows can't be read |
 | `DEMO_MODE=true` | Turns on the public demo below |
 | `TRUSTED_PROXIES` | Your host's proxy addresses, so rate limits see real visitors |
-| `GNANI_API_KEY` | In demo mode, used once at startup to prepare warning clips. Leave it empty to spend nothing; warnings then show as text |
+| `GNANI_API_KEY` | In demo mode, used at startup to prepare warning clips. Leave it empty to spend nothing; warnings then show as text |
+| `DEMO_SHARED_KEY=true` | Lets visitors use the microphone, recordings and spoken drill answers on your key, up to `DEMO_SHARED_DAILY_LIMIT` (200) listening sessions a day. Off by default |
 
 **In demo mode, a visitor:**
 
@@ -590,7 +597,7 @@ The Dockerfile builds one container with the backend and the dashboard. The micr
 |---|---|
 | Run the Simulator, Check a Call with pasted text, and Scam Drill with typed answers, with no key | See anyone else's calls, or any real person, number or transcript |
 | Use the microphone, upload recordings and speak in drills with **their own Gnani key** | Trigger a real alert (the call page shows what would have been sent) |
-| See their own calls for an hour, then they're deleted | Spend the server's Gnani credits or LLM budget |
+| See their own calls for an hour, then they're deleted | Spend the server's Gnani credits or LLM budget, unless `DEMO_SHARED_KEY=true` |
 
 The visitor's key stays in their browser tab, goes to this server only to reach Gnani, and isn't stored or logged. The family logs in with the password, and sees only real calls.
 
@@ -600,8 +607,6 @@ The visitor's key stays in their browser tab, goes to this server only to reach 
 
 ## Privacy and safety
 
-**In place now**
-
 - Consent is recorded per person, and again for any cloned voice, which must be the speaker's own. The voice can be deleted at any time, and the reference recording is not kept.
 - Every spoken warning says it comes from Chaukanna AI.
 - No call audio is stored. Check a Call and Scam Drill save nothing.
@@ -610,13 +615,16 @@ The visitor's key stays in their browser tab, goes to this server only to reach 
 - With `ENCRYPTION_KEY` set, transcripts, quotes, alert text, call summaries, voice models and Telegram chat ids are encrypted with AES-256-GCM. Rows from before the key was set stay readable until they're deleted by retention. Phone numbers aren't encrypted, because calls are looked up by them.
 - A false alarm marked by the family releases the number.
 - Audio and transcripts do go to the configured speech and reasoning providers to do the job.
-
-**Not done yet**
-
-- One shared family password, rather than separate accounts per family.
-- Don't use `VITE_DASHBOARD_TOKEN` on a hosted copy: it gets built into the page, where anyone can read it. Use `DASHBOARD_PASSWORD`.
-- Not legally reviewed. Recording rules and the DPDP Act, 2023 need proper advice before real-world use.
 - All demo calls are staged re-enactments and are labelled as such.
+
+**Security**
+
+- Without `DASHBOARD_PASSWORD`, the dashboard opens only for requests made on the same computer. Through ngrok, Docker or a hosted address it asks for a login.
+- POSTs, DELETEs and WebSockets from another website are refused, and session cookies are `HttpOnly` and `SameSite=Strict`.
+- The dashboard can't be framed by another site, and secrets in URLs (the Exotel token, `?token=`) are hidden in request logs.
+- Telegram links work once, so a forwarded link can't move a family's alerts to another chat.
+- Ids in URLs are checked to be numbers before any database lookup, and WebSocket messages and uploads have size limits.
+- `govulncheck` and `npm audit` report no known vulnerabilities in the dependencies.
 
 ---
 
@@ -628,6 +636,8 @@ The visitor's key stays in their browser tab, goes to this server only to reach 
 - [ ] Automatic checks of call recordings
 - [ ] A shared database of scam phone numbers, built from detected calls
 - [ ] Contact-centre version for banks: flag fraud on inbound customer calls
+- [ ] Separate logins per family member
+- [ ] Legal review (call recording rules, DPDP Act, 2023) before real-world use
 
 ---
 
@@ -642,13 +652,26 @@ The visitor's key stays in their browser tab, goes to this server only to reach 
 | Prisma reconnecting after its 15-minute session limit | 🟡 Tested against a fake server, not on a real 15-minute call |
 | Interrupting a read-out, reminders, talk-out replies, follow-up alerts, Safe button | 🟡 Tested with replayed text, not yet on a real call |
 | Twilio stream handling | 🟡 Tested with simulated streams |
-| Screen Mode on a real forwarded call | ❌ Not tested yet |
-| Scored test of real friends' calls | ❌ In progress |
 | Evon on the current rules | 🟡 Benchmarked on replayed and typed calls on our own GPU, not yet tried on a live call |
 | Docker image | 🟡 Built and run locally with dummy settings, not hosted or tried with real speech keys |
 | Phone app: install, offline screen, bottom navigation | 🟡 Checked in desktop Chrome at phone size, not yet on a real phone or a hosted address |
 | Interface in 10 languages | 🟡 Machine-translated, not reviewed by native speakers. Setup and test screens are in English |
-| Regional warnings reviewed by native speakers | ❌ Not yet |
+
+### Lighthouse
+
+Lighthouse 12.8 on the production build served by the Go backend (`WEB_DIST`), on 8 November 2026. Measured on localhost, so a hosted copy will be slower on network time.
+
+| Page | Performance (mobile / desktop) | Accessibility | Best practices | SEO |
+|---|---|---|---|---|
+| Calls (home) | 100 / 100 | 100 | 100 | 100 |
+| Speakerphone | 100 / 100 | 100 | 100 | 100 |
+| Check a call | 100 / 100 | 100 | 100 | 100 |
+| Scam Drill | 100 / 100 | 100 | 100 | 100 |
+| Simulator | 100 / 100 | 100 | 100 | 100 |
+| People | 100 / 100 | 100 | 100 | 100 |
+| One call's page | 99 / 98 | 100 | 100 | 63 |
+
+A call's page scores 63 for SEO on purpose: `robots.txt` keeps search engines away from `/calls/`, because those pages hold private transcripts.
 
 ---
 

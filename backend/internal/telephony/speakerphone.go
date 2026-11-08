@@ -35,6 +35,7 @@ func (h *Handler) SpeakerStream(c *gin.Context) {
 	if err != nil {
 		return
 	}
+	conn.SetReadLimit(maxStreamMessage)
 	defer conn.Close()
 	leg := &speakerLeg{conn: conn}
 
@@ -49,16 +50,25 @@ func (h *Handler) SpeakerStream(c *gin.Context) {
 		// A demo visitor pays for their own listening. The key arrives as the first
 		// message, not in the URL, because URLs end up in server logs.
 		key := readVisitorKey(conn)
-		if key == "" {
+		switch {
+		case key != "":
+			prisma = h.prisma.WithKey(key)
+			if h.opts.DemoTTS != nil {
+				params.TTS = h.opts.DemoTTS.WithKey(key)
+			}
+		case h.opts.SharedListening != nil && h.prisma.Enabled():
+			// The demo's shared key: one session from today's allowance.
+			if !h.opts.SharedListening() {
+				leg.send(map[string]any{"type": "error", "message": "The demo's shared Gnani key has reached today's limit. Add your own Gnani key to use the microphone."})
+				return
+			}
+			params.TTS = h.opts.DemoTTS
+		default:
 			leg.send(map[string]any{"type": "error", "message": "Add your Gnani API key to use the microphone."})
 			return
 		}
-		prisma = h.prisma.WithKey(key)
 		params.Owner = owner
 		params.Language = scam.KnownLanguage(c.Query("language"))
-		if h.opts.DemoTTS != nil {
-			params.TTS = h.opts.DemoTTS.WithKey(key)
-		}
 	}
 
 	if !prisma.Enabled() {

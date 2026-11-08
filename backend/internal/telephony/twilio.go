@@ -86,6 +86,7 @@ func (h *Handler) TwilioStream(c *gin.Context) {
 	if err != nil {
 		return
 	}
+	conn.SetReadLimit(maxStreamMessage)
 	defer conn.Close()
 
 	leg := &twilioLeg{conn: conn, rest: h.twilio}

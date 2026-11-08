@@ -29,6 +29,10 @@ import (
 	"chaukanna/internal/twilio"
 )
 
+// maxStreamMessage caps one WebSocket message. Audio frames are a few KB; without a
+// cap, one huge message could use up the server's memory.
+const maxStreamMessage = 1 << 20
+
 // Handler serves the telephony endpoints.
 type Handler struct {
 	sessions  *session.Manager
@@ -47,6 +51,9 @@ type Options struct {
 	ExotelToken string
 	// DemoTTS is the voice for visitors without a key: only prepared clips.
 	DemoTTS *tts.Client
+	// SharedListening, when set, lets a visitor without a key use this server's Gnani
+	// key for one microphone session, if the shared daily allowance has room.
+	SharedListening func() bool
 }
 
 // New creates a Handler.

@@ -3,11 +3,14 @@
 
 import { useState, type FormEvent } from 'react'
 import { getGnaniKey, setGnaniKey } from '../lib/api'
+import { useAccess } from '../lib/access'
 import { Button } from './ui'
 
 export function GnaniKeyCard({ need, onChange }: { need: string; onChange?: (hasKey: boolean) => void }) {
   const [saved, setSaved] = useState(!!getGnaniKey())
   const [value, setValue] = useState('')
+  const { access } = useAccess()
+  const [ownKey, setOwnKey] = useState(false)
 
   const save = (e: FormEvent) => {
     e.preventDefault()
@@ -25,7 +28,12 @@ export function GnaniKeyCard({ need, onChange }: { need: string; onChange?: (has
 
   return (
     <section className="rounded-2xl border border-cyan-500/30 bg-cyan-500/5 p-4 text-sm">
-      {saved ? (
+      {!saved && access.shared_key && !ownKey ? (
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="text-emerald-300">✓ Speech works here on the demo's shared Gnani key, up to a daily limit. No key needed.</span>
+          <Button variant="ghost" onClick={() => setOwnKey(true)}>Use my own key</Button>
+        </div>
+      ) : saved ? (
         <div className="flex flex-wrap items-center gap-3">
           <span className="text-emerald-300">✓ Using your Gnani key in this tab.</span>
           <Button variant="ghost" onClick={clear}>Remove key</Button>

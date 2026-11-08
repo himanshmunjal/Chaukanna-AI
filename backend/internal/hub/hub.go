@@ -103,6 +103,7 @@ func (h *Hub) ServeWS(ctx *gin.Context) {
 	if err != nil {
 		return
 	}
+	conn.SetReadLimit(4096) // the browser sends nothing we use
 	c := &client{conn: conn, send: make(chan []byte, 128), owner: ctx.GetString(OwnerKey)}
 
 	h.mu.Lock()

@@ -21,6 +21,7 @@ import (
 	"chaukanna/internal/gnanihttp"
 	"chaukanna/internal/hub"
 	"chaukanna/internal/models"
+	"chaukanna/internal/ratelimit"
 	"chaukanna/internal/reasoner"
 	"chaukanna/internal/scam"
 	"chaukanna/internal/session"
@@ -113,10 +114,20 @@ func main() {
 			DashboardURL:     cfg.DashboardURL,
 		},
 	)
+	// Demo visitors may listen on this server's key only when DEMO_SHARED_KEY=true, and
+	// only for DEMO_SHARED_DAILY_LIMIT sessions a day across everyone.
+	var sharedListening func() bool
+	if cfg.DemoMode && cfg.DemoSharedKey && prisma.Enabled() {
+		allowance := ratelimit.New(cfg.DemoSharedDailyLimit, 24*time.Hour)
+		sharedListening = func() bool { return allowance.Allow("shared") }
+		log.Printf("demo: visitors may use this server's Gnani key, up to %d listening sessions a day", cfg.DemoSharedDailyLimit)
+	}
+
 	tel := telephony.New(sessions, prisma, twilioClient, cfg.PublicURL, telephony.Options{
-		TestMode:    cfg.TelephonyTestMode,
-		ExotelToken: cfg.ExotelStreamToken,
-		DemoTTS:     timbre,
+		TestMode:        cfg.TelephonyTestMode,
+		ExotelToken:     cfg.ExotelStreamToken,
+		DemoTTS:         timbre,
+		SharedListening: sharedListening,
 	})
 	warnIfExposed(cfg)
 
@@ -129,6 +140,7 @@ func main() {
 
 	router := api.NewRouter(cfg, db, h, sessions, tel, clipStore, status, api.Services{
 		Evon: evon, Prisma: prisma, TTS: timbre, Telegram: telegramClient,
+		SharedListening: sharedListening,
 		Detector: detector.Config{
 			RiskSuspicious: cfg.RiskSuspicious, RiskCaution: cfg.RiskCaution, RiskScam: cfg.RiskScam,
 			RiskClear: cfg.RiskClear, Window: cfg.EvonWindow, Interval: cfg.EvonInterval,
@@ -178,9 +190,8 @@ func purgeDemoCalls(db *gorm.DB) {
 
 // warnIfExposed says so at startup when a deployment looks unprotected.
 func warnIfExposed(cfg config.Config) {
-	public := cfg.PublicURL != "" || cfg.DemoMode
-	if public && cfg.DashboardPassword == "" && cfg.DashboardToken == "" && !cfg.DemoMode {
-		log.Println("⚠️  PUBLIC_URL is set but DASHBOARD_PASSWORD is not: anyone with the address can open the dashboard")
+	if cfg.DashboardPassword == "" && cfg.DashboardToken == "" && !cfg.DemoMode {
+		log.Println("startup: no DASHBOARD_PASSWORD: the dashboard opens only on this machine (localhost). Set it to use the dashboard through a tunnel, Docker or a hosted address")
 	}
 	if cfg.DemoMode && cfg.DashboardPassword == "" {
 		log.Println("demo mode: no DASHBOARD_PASSWORD, so nobody can log in as family on this deployment")

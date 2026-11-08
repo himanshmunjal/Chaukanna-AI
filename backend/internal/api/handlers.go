@@ -42,12 +42,16 @@ func (s *Server) activeCalls(c *gin.Context) {
 // GET /api/calls/:id
 func (s *Server) getCall(c *gin.Context) {
 	var call models.Call
+	id, ok := pathID(c)
+	if !ok {
+		return
+	}
 	err := s.ownCalls(c).
 		Preload("ProtectedUser").
 		Preload("Transcript", func(db *gormDB) *gormDB { return db.Order("time_sec, id") }).
 		Preload("Flags", func(db *gormDB) *gormDB { return db.Order("time_sec, id") }).
 		Preload("Alerts").
-		First(&call, c.Param("id")).Error
+		First(&call, id).Error
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "call not found"})
 		return
@@ -134,7 +138,11 @@ func (s *Server) createUser(c *gin.Context) {
 
 // DELETE /api/users/:id
 func (s *Server) deleteUser(c *gin.Context) {
-	if err := s.db.Delete(&models.ProtectedUser{}, c.Param("id")).Error; err != nil {
+	id, ok := pathID(c)
+	if !ok {
+		return
+	}
+	if err := s.db.Delete(&models.ProtectedUser{}, id).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
@@ -186,7 +194,11 @@ func (s *Server) reportScamNumber(c *gin.Context) {
 
 // DELETE /api/scam-numbers/:id  (unblock, e.g. after a false alarm)
 func (s *Server) deleteScamNumber(c *gin.Context) {
-	if err := s.db.Delete(&models.ScamNumber{}, c.Param("id")).Error; err != nil {
+	id, ok := pathID(c)
+	if !ok {
+		return
+	}
+	if err := s.db.Delete(&models.ScamNumber{}, id).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}

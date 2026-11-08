@@ -6,7 +6,7 @@ import { LoginPage } from '../pages/LoginPage'
 
 // If the server can't say (an older backend, say), behave as the local dashboard always has.
 // The server still decides what each request may do.
-const OPEN: Access = { family: true, demo: false, login_required: false, can_login: false, logged_in: false }
+const OPEN: Access = { family: true, demo: false, login_required: false, can_login: false, logged_in: false, shared_key: false }
 
 interface AccessValue {
   access: Access

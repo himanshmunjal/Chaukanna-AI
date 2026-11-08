@@ -219,6 +219,8 @@ export interface Access {
   login_required: boolean
   can_login: boolean
   logged_in: boolean
+  /** Demo visitors may listen on the server's Gnani key, within a daily allowance. */
+  shared_key?: boolean
 }
 
 export const api = {
