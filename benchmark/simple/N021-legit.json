@@ -1,0 +1,20 @@
+{
+  "id": "N021",
+  "title": "Talking about scams",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "और हाँ, bank वाला कोई OTP माँगे तो मत देना।"
+    },
+    {
+      "t": 10,
+      "text": "पता है बेटा।"
+    },
+    {
+      "t": 15,
+      "text": "बस याद दिला रहा था।"
+    }
+  ]
+}

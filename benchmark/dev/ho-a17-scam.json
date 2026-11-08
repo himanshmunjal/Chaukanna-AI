@@ -1,0 +1,20 @@
+{
+  "id": "ho-a17-scam",
+  "title": "E-Commerce Refund / Unauthorized Transaction (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Amazon Customer Care here"
+    },
+    {
+      "t": 6,
+      "text": "an order for iPhone 15 Pro worth 1,20,000 rupees was placed using your Amazon Pay ICICI card"
+    },
+    {
+      "t": 10,
+      "text": "If you did not place this order, press 1 to cancel and install our remote support tool to process refund"
+    }
+  ]
+}

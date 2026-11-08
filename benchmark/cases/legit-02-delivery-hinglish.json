@@ -1,0 +1,10 @@
+{
+  "title": "Delivery agent asking for directions (Hinglish)",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    { "t": 1,  "text": "Hello madam, main Amazon delivery se bol raha hoon, aapka parcel hai." },
+    { "t": 5,  "text": "Main gali number chaar mein khada hoon, aapka ghar kaunsa hai?" },
+    { "t": 10, "text": "Achha mandir ke saamne wala, theek hai main paanch minute mein aata hoon." }
+  ]
+}

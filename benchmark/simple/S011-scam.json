@@ -1,0 +1,20 @@
+{
+  "id": "S011",
+  "title": "Courier or customs",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Courier में illegal सामान मिला है, आपके नाम पर FIR होगी।"
+    },
+    {
+      "t": 10,
+      "text": "ये गलत है।"
+    },
+    {
+      "t": 15,
+      "text": "बचना है तो abhi officer को 50000 transfer कीजिए।"
+    }
+  ]
+}

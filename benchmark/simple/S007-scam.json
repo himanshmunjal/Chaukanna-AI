@@ -1,0 +1,20 @@
+{
+  "id": "S007",
+  "title": "Courier or customs",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "FedEx से call है, आपके parcel में passport और drugs मिले हैं।"
+    },
+    {
+      "t": 10,
+      "text": "मैंने कोई parcel नहीं भेजा।"
+    },
+    {
+      "t": 15,
+      "text": "Customs का case बनेगा, अभी 25000 clearance charge दीजिए।"
+    }
+  ]
+}

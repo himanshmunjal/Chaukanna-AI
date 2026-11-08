@@ -1,0 +1,24 @@
+{
+  "id": "ho-a10-scam",
+  "title": "SIM Card Expiry / Porting Scam (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Sir I am calling from Airtel verification office"
+    },
+    {
+      "t": 6,
+      "text": "Your SIM card 5G upgrade is pending and connection will terminate in 1 hour"
+    },
+    {
+      "t": 10,
+      "text": "To prevent blockage, send SMS with code SIMUPGRADE 8991"
+    },
+    {
+      "t": 14,
+      "text": "to 121 and read back the code received"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "N059",
+  "title": "Everyday chat",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "सॉरी, wrong number लग गया।"
+    },
+    {
+      "t": 10,
+      "text": "कोई बात नहीं।"
+    },
+    {
+      "t": 15,
+      "text": "शर्मा जी का घर नहीं है ना?"
+    },
+    {
+      "t": 20,
+      "text": "नहीं जी।"
+    }
+  ]
+}

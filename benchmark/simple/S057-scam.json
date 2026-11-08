@@ -1,0 +1,20 @@
+{
+  "id": "S057",
+  "title": "Job or task",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका Dubai की company में selection हुआ है।"
+    },
+    {
+      "t": 10,
+      "text": "मैंने apply नहीं किया।"
+    },
+    {
+      "t": 15,
+      "text": "visa के लिए 45000 आज जमा कीजिए, offer letter भेजते हैं।"
+    }
+  ]
+}

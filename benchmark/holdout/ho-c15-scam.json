@@ -1,0 +1,16 @@
+{
+  "id": "ho-c15-scam",
+  "title": "kbc whatsapp (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "kaun banega crorepati lottery department se bol raha hu aapka number 25 lakh ka winner hai"
+    },
+    {
+      "t": 6,
+      "text": "whatsapp pe video call karke apna id card dikhao aur fees ke liye paytm kar do"
+    }
+  ]
+}

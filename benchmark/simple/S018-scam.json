@@ -1,0 +1,20 @@
+{
+  "id": "S018",
+  "title": "Bank or KYC",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Bank का नया app आया है, पुराना बंद हो रहा है।"
+    },
+    {
+      "t": 10,
+      "text": "अच्छा।"
+    },
+    {
+      "t": 15,
+      "text": "मैं link भेज रहा हूँ, उसमें customer ID और password डालिए।"
+    }
+  ]
+}

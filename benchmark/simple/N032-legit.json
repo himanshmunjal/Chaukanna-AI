@@ -1,0 +1,20 @@
+{
+  "id": "N032",
+  "title": "Hospital or doctor",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "डॉक्टर साहब का clinic है, कल का appointment पक्का है?"
+    },
+    {
+      "t": 10,
+      "text": "हाँ जी।"
+    },
+    {
+      "t": 15,
+      "text": "11 बजे आ जाइए।"
+    }
+  ]
+}

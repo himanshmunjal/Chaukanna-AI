@@ -1,0 +1,16 @@
+{
+  "id": "ho-a27-legit",
+  "title": "Broadband Internet Downtime Alert (set A, pasted)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Dear Customer, Airtel Xstream Fiber automated update: There is an fiber cut issue in your area causing connection outage"
+    },
+    {
+      "t": 6,
+      "text": "Our engineering team is fixing it and service will be restored by 5:00 PM today"
+    }
+  ]
+}

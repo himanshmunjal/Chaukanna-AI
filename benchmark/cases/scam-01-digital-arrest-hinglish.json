@@ -1,0 +1,14 @@
+{
+  "title": "Fake CBI officer, 'digital arrest' (Hinglish)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    { "t": 1,  "text": "Hello, kya main Kamla Devi ji se baat kar raha hoon?" },
+    { "t": 5,  "text": "Haan ji, boliye, kaun?" },
+    { "t": 8,  "text": "Main CBI headquarters Delhi se Inspector Rajesh Sharma bol raha hoon." },
+    { "t": 14, "text": "Aapke Aadhaar card se ek bank account khula hai jismein money laundering hui hai." },
+    { "t": 21, "text": "Aapke naam par arrest warrant nikla hai, aapko abhi digital arrest kiya ja raha hai." },
+    { "t": 28, "text": "Video call band mat karna aur kisi ko mat batana, yeh confidential case hai." },
+    { "t": 36, "text": "Agar aap nirdosh hain toh apna saara paisa RBI ke safe account mein transfer kijiye, verification ke baad wapas mil jayega." }
+  ]
+}

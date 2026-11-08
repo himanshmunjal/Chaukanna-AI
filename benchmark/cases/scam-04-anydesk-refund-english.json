@@ -1,0 +1,11 @@
+{
+  "title": "Refund scam with AnyDesk (Indian English)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    { "t": 1,  "text": "Hello madam, I am calling from the customer care refund department." },
+    { "t": 6,  "text": "You were charged twice for your last order, so you will get a cashback of 4999 rupees." },
+    { "t": 13, "text": "To process the refund, please download the AnyDesk app from the Play Store." },
+    { "t": 20, "text": "Now open your UPI app and enter the amount, the money will come to your account." }
+  ]
+}

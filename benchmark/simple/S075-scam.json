@@ -1,0 +1,20 @@
+{
+  "id": "S075",
+  "title": "Government benefit",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "LIC से, आपकी policy mature हुई, 4 लाख मिलेंगे।"
+    },
+    {
+      "t": 10,
+      "text": "अच्छा।"
+    },
+    {
+      "t": 15,
+      "text": "पहले 15000 tax इस account में भरना होगा।"
+    }
+  ]
+}

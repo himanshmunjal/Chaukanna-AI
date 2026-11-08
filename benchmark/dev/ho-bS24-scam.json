@@ -1,0 +1,28 @@
+{
+  "id": "ho-bS24-scam",
+  "title": "Fake scholarship (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello student, education ministry scholarship list mein aapka naam hai"
+    },
+    {
+      "t": 6,
+      "text": "75,000 rupaye milenge"
+    },
+    {
+      "t": 10,
+      "text": "Main eligible hu kya?"
+    },
+    {
+      "t": 14,
+      "text": "Yes sir, congratulations"
+    },
+    {
+      "t": 18,
+      "text": "Bas verification aur document processing ke liye 1500 bhejna hai"
+    }
+  ]
+}

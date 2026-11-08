@@ -1,0 +1,20 @@
+{
+  "id": "call-043-scam",
+  "title": "Real speakerphone call #43 (guardian): बधाई हो madam, आपका number KBC lucky draw में आया है। आपने 50...",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 7.2,
+      "text": "बधाई हो madam, आपका number KBC lucky draw में आया है। आपने 50..."
+    },
+    {
+      "t": 8.8,
+      "text": "लाख जीते हैं।"
+    },
+    {
+      "t": 19.9,
+      "text": "सच्ची में, मैं तो खेला ही नहीं। SIM card से automatic selection हुआ है, बस GST और processing fee के 12,500 जमा कराने होंगे।"
+    }
+  ]
+}

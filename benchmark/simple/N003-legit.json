@@ -1,0 +1,20 @@
+{
+  "id": "N003",
+  "title": "Real bank alert",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "ICICI से, आपके account में नई login दिखी।"
+    },
+    {
+      "t": 10,
+      "text": "वो मेरा बेटा है।"
+    },
+    {
+      "t": 15,
+      "text": "ठीक है, कभी किसी को password मत बताइएगा।"
+    }
+  ]
+}

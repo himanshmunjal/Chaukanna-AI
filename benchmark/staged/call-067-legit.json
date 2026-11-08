@@ -1,0 +1,24 @@
+{
+  "id": "call-067-legit",
+  "title": "Real speakerphone call #67 (guardian): Axis Bank की तरफ से reminder।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 3.5,
+      "text": "Axis Bank की तरफ से reminder।"
+    },
+    {
+      "t": 8.5,
+      "text": "आपकी 12450 की EMI 5 तारीख को due है।"
+    },
+    {
+      "t": 10.7,
+      "text": "हाँ, account में पैसे हैं।"
+    },
+    {
+      "t": 17,
+      "text": "जी, auto debit हो जाएंगे। आप bank app से भी देख सकती हैं। धन्यवाद।"
+    }
+  ]
+}

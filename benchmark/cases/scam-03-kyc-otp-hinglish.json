@@ -1,0 +1,11 @@
+{
+  "title": "Bank KYC expiry, OTP request (Hinglish)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    { "t": 1,  "text": "Good morning sir, main aapke bank ke KYC department se bol rahi hoon." },
+    { "t": 6,  "text": "Aapka KYC expire ho gaya hai, aaj raat tak update nahi kiya toh account block ho jayega." },
+    { "t": 13, "text": "Main abhi online update kar deti hoon, aapke phone par ek OTP aaya hoga, woh bataiye." },
+    { "t": 19, "text": "Jaldi karo sir, time nahi hai, system band ho jayega." }
+  ]
+}

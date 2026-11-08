@@ -1,0 +1,20 @@
+{
+  "id": "ho-c24-scam",
+  "title": "ecommerce refund (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "this is amazon customer service your order of laptop got cancelled and refund is pending"
+    },
+    {
+      "t": 6,
+      "text": "to refund please open your gpay and approve the collect request i am sending"
+    },
+    {
+      "t": 10,
+      "text": "accept it sir"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "N042",
+  "title": "EMI or reminders",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Gym से, आपकी membership इस महीने खत्म होगी।"
+    },
+    {
+      "t": 10,
+      "text": "सोचकर बताता हूँ।"
+    },
+    {
+      "t": 15,
+      "text": "ठीक है, कोई जल्दी नहीं है।"
+    }
+  ]
+}

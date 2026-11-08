@@ -1,0 +1,11 @@
+{
+  "title": "KBC lottery prize with processing fee (Hinglish)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    { "t": 1,  "text": "Badhai ho! Aapka number KBC lucky draw mein select hua hai." },
+    { "t": 6,  "text": "Aapne pachchees lakh rupaye ki lottery jeeti hai." },
+    { "t": 11, "text": "Prize claim karne ke liye bas pachchees sau rupaye processing fee bharni hogi." },
+    { "t": 17, "text": "Aaj hi payment kijiye, warna prize cancel ho jayega." }
+  ]
+}

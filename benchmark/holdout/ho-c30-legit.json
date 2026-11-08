@@ -1,0 +1,20 @@
+{
+  "id": "ho-c30-legit",
+  "title": "doctor appointment (set C, scam_call_test_data.csv)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello this is reception at dr rao's clinic uh just reminding you of your appointment tomorrow at eleven thirty"
+    },
+    {
+      "t": 6,
+      "text": "please bring previous reports ok"
+    },
+    {
+      "t": 10,
+      "text": "yes yes thank you bye"
+    }
+  ]
+}

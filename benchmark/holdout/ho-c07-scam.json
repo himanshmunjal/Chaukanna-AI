@@ -1,0 +1,16 @@
+{
+  "id": "ho-c07-scam",
+  "title": "tech support (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello this is microsoft support we detect virus in your laptop it is sending your data to hackers"
+    },
+    {
+      "t": 6,
+      "text": "please download any desk app and tell me the nine digit code so i can clean it remotely ok sir"
+    }
+  ]
+}

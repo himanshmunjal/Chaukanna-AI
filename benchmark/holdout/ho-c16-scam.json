@@ -1,0 +1,16 @@
+{
+  "id": "ho-c16-scam",
+  "title": "instant loan (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "sir you are pre approved for loan of five lakh at zero interest no documents"
+    },
+    {
+      "t": 6,
+      "text": "uh only processing fee of eight thousand to be paid in advance then amount in your account in ten minutes"
+    }
+  ]
+}

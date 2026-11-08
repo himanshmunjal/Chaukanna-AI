@@ -1,0 +1,16 @@
+{
+  "id": "ho-c01-scam",
+  "title": "electricity disconnection (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello sir this is from electricity board vidyut vibhag uh your last month bill is not updated and tonight 9:30 your connection will be cut"
+    },
+    {
+      "t": 6,
+      "text": "to avoid you have to call this number 98xx and pay ten rupees verification through the link i send"
+    }
+  ]
+}

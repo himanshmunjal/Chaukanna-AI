@@ -1,0 +1,20 @@
+{
+  "id": "S005",
+  "title": "Digital arrest",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Supreme Court का order है, आपका खाता जाँच में है।"
+    },
+    {
+      "t": 10,
+      "text": "जी सर।"
+    },
+    {
+      "t": 15,
+      "text": "अपनी पूरी FD तोड़कर बताए गए account में भेजिए, verify होकर लौट आएगी।"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ho-c17-scam",
+  "title": "aadhaar suspended (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "your aadhaar number is being suspended due to suspicious use in five states"
+    },
+    {
+      "t": 6,
+      "text": "to verify please share the OTP that came on your registered mobile uh and last four digits of pan card"
+    }
+  ]
+}

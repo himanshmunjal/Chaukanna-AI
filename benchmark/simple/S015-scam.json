@@ -1,0 +1,20 @@
+{
+  "id": "S015",
+  "title": "Bank or KYC",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "ICICI से manager बोल रहा हूँ, आपके points expire हो रहे हैं।"
+    },
+    {
+      "t": 10,
+      "text": "कितने हैं?"
+    },
+    {
+      "t": 15,
+      "text": "5000 के हैं, net banking का password बताइए, cash में बदल देता हूँ।"
+    }
+  ]
+}

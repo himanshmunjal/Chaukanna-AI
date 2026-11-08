@@ -1,0 +1,20 @@
+{
+  "id": "N013",
+  "title": "Family money",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "मम्मी, fees के 5000 कम पड़ रहे हैं।"
+    },
+    {
+      "t": 10,
+      "text": "papa से बात की?"
+    },
+    {
+      "t": 15,
+      "text": "हाँ, कहा आपसे ले लूँ, Sunday को घर आऊँगा।"
+    }
+  ]
+}

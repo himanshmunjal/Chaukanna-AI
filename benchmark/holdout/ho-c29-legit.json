@@ -1,0 +1,24 @@
+{
+  "id": "ho-c29-legit",
+  "title": "bank fraud alert genuine (set C, scam_call_test_data.csv)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello this is an automated call from your bank"
+    },
+    {
+      "t": 6,
+      "text": "a transaction of four thousand rupees was attempted on your card"
+    },
+    {
+      "t": 10,
+      "text": "press one if it was you or two if not"
+    },
+    {
+      "t": 14,
+      "text": "please remember we will never ask for your PIN or OTP on phone"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Electricity disconnection threat (Hinglish)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    { "t": 1,  "text": "Namaskar, main bijli vibhag se bol raha hoon." },
+    { "t": 5,  "text": "Aapka pichhle mahine ka bill update nahi hua hai, aaj raat 9:30 baje aapka connection kat jayega." },
+    { "t": 13, "text": "Turant is link se payment kijiye ya hamare officer ka app download karke details bhariye." }
+  ]
+}

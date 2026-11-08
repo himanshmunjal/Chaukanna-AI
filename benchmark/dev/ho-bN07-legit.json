@@ -1,0 +1,24 @@
+{
+  "id": "ho-bN07-legit",
+  "title": "Genuine subscription renewal (set B, call_scam_test_dataset.csv)",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello sir, aapka Netflix subscription 5 din mein renew hone wala hai"
+    },
+    {
+      "t": 6,
+      "text": "Automatic payment enabled hai?"
+    },
+    {
+      "t": 10,
+      "text": "Yes sir, registered payment method se charge hoga"
+    },
+    {
+      "t": 14,
+      "text": "Agar cancel karna ho toh app settings mein kar sakte hain"
+    }
+  ]
+}

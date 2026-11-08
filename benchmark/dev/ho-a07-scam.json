@@ -1,0 +1,32 @@
+{
+  "id": "ho-a07-scam",
+  "title": "AI Voice Cloning / Relative in Emergency (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Dad!"
+    },
+    {
+      "t": 6,
+      "text": "Dad please help me!"
+    },
+    {
+      "t": 10,
+      "text": "I got into a bad accident while driving with my friend, police has caught me and locked me up"
+    },
+    {
+      "t": 14,
+      "text": "a guy is injured badly"
+    },
+    {
+      "t": 18,
+      "text": "Transfer 40,000 immediately to this lawyer's UPI ID before they register an FIR!"
+    },
+    {
+      "t": 22,
+      "text": "Please don't call Mom!"
+    }
+  ]
+}

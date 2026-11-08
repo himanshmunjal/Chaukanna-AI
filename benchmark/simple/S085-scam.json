@@ -1,0 +1,20 @@
+{
+  "id": "S085",
+  "title": "Fake link or login",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपके bank का reward मिला है।"
+    },
+    {
+      "t": 10,
+      "text": "कैसे लूँ?"
+    },
+    {
+      "t": 15,
+      "text": "SMS वाला link खोलिए, net banking का login करिए।"
+    }
+  ]
+}

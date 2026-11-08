@@ -1,0 +1,20 @@
+{
+  "id": "S044",
+  "title": "Tech support or remote access",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Microsoft से call है, आपके computer में virus है।"
+    },
+    {
+      "t": 10,
+      "text": "अरे!"
+    },
+    {
+      "t": 15,
+      "text": "TeamViewer खोलिए और नंबर बताइए, अभी साफ कर देते हैं।"
+    }
+  ]
+}

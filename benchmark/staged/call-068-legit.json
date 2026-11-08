@@ -1,0 +1,24 @@
+{
+  "id": "call-068-legit",
+  "title": "Real speakerphone call #68 (guardian): मैडम, LIC agent वर्मा बोल रहा हूँ।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 4.5,
+      "text": "मैडम, LIC agent वर्मा बोल रहा हूँ।"
+    },
+    {
+      "t": 9.2,
+      "text": "ये plan सिर्फ महीने है, guaranteed bonus मिलता है।"
+    },
+    {
+      "t": 10.8,
+      "text": "अभी नहीं चाहिए।"
+    },
+    {
+      "t": 16.6,
+      "text": "सोच लीजिए, मैं घर आ जाता हूँ, paper दिखा दूँगा। कोई जल्दी नहीं है।"
+    }
+  ]
+}

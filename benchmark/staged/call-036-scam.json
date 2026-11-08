@@ -1,0 +1,20 @@
+{
+  "id": "call-036-scam",
+  "title": "Real speakerphone call #36 (guardian): नमस्ते दादी, मैं CBI Delhi से inspector अथौड बोल रहा हूँ। आपके Aadhaar…",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 9.1,
+      "text": "नमस्ते दादी, मैं CBI Delhi से inspector अथौड बोल रहा हूँ। आपके Aadhaar से एक bank account खुला है।"
+    },
+    {
+      "t": 11.8,
+      "text": "कैसा account? मैंने तो कुछ नहीं किया।"
+    },
+    {
+      "t": 23.3,
+      "text": "उस account में 2 करोड़ की money laundering हुई है। आपके नाम का arrest warrant निकल चुका है। हाय राम! अब क्या होगा? आप video call पर आइए, phone मत काटना।"
+    }
+  ]
+}

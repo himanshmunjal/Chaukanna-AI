@@ -1,0 +1,28 @@
+{
+  "id": "call-058-scam",
+  "title": "Real speakerphone call #58 (guardian): मैं cyber crime से बोल रहा हूँ, आपका नाम पे case है।",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5.2,
+      "text": "मैं cyber crime से बोल रहा हूँ, आपका नाम पे case है।"
+    },
+    {
+      "t": 8.7,
+      "text": "ये phone में कोई बोल रहा है कि fraud है।"
+    },
+    {
+      "t": 15,
+      "text": "वो machine है madam, उसको बंद कर दीजिए। मैं fraud नहीं हूँ, मैं सरकारी office हूँ।"
+    },
+    {
+      "t": 16.1,
+      "text": "पक्का।"
+    },
+    {
+      "t": 20.8,
+      "text": "पक्का जरूर भर दीजिए, वरना कल police घर आ जाएगी।"
+    }
+  ]
+}

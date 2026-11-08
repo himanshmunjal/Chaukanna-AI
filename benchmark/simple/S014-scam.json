@@ -1,0 +1,20 @@
+{
+  "id": "S014",
+  "title": "Bank or KYC",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "HDFC head office से, आपका debit card block होने वाला है।"
+    },
+    {
+      "t": 10,
+      "text": "क्यों?"
+    },
+    {
+      "t": 15,
+      "text": "card का number और पीछे के तीन अंक बताइए, अभी चालू कर देता हूँ।"
+    }
+  ]
+}

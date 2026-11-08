@@ -1,0 +1,20 @@
+{
+  "id": "N022",
+  "title": "Talking about scams",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "TV पर देखा, parcel में drugs बोलकर लोगों को ठगते हैं।"
+    },
+    {
+      "t": 10,
+      "text": "हाँ, मैंने भी देखा।"
+    },
+    {
+      "t": 15,
+      "text": "कितने चालाक हैं लोग।"
+    }
+  ]
+}

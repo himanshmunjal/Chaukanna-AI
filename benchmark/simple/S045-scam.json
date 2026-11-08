@@ -1,0 +1,20 @@
+{
+  "id": "S045",
+  "title": "Tech support or remote access",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका phone hack हो गया है, मैं Cyber team से हूँ।"
+    },
+    {
+      "t": 10,
+      "text": "क्या करूँ?"
+    },
+    {
+      "t": 15,
+      "text": "एक app भेज रहा हूँ, install करके सारी permission दे दीजिए।"
+    }
+  ]
+}

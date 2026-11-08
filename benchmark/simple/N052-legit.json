@@ -1,0 +1,20 @@
+{
+  "id": "N052",
+  "title": "Shops and UPI",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "भैया, 500 आपके number पर Google Pay कर दिए।"
+    },
+    {
+      "t": 10,
+      "text": "आ गए, धन्यवाद।"
+    },
+    {
+      "t": 15,
+      "text": "ठीक है, कल सब्जी भेज देना।"
+    }
+  ]
+}

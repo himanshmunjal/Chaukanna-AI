@@ -1,0 +1,11 @@
+{
+  "title": "Fake phone-repair / SBI manager asks to share screen (from a real speakerphone test)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    { "t": 2,  "text": "नमस्ते।" },
+    { "t": 9,  "text": "मैं phone repair वाला बात कर रहा हूँ, क्या आप अपनी screen मेरे साथ share कर सकते हैं?" },
+    { "t": 34, "text": "मैं SBI bank से manager बात कर रहा हूँ।" },
+    { "t": 37, "text": "क्या आप अपनी screen मेरे साथ share कर सकते हैं?" }
+  ]
+}

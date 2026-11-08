@@ -1,0 +1,16 @@
+{
+  "id": "ho-c20-scam",
+  "title": "card blocked bank manager (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "main bank manager bol raha hu aapka debit card block ho gaya hai suspicious transaction"
+    },
+    {
+      "t": 6,
+      "text": "new card ke liye aapko PIN aur o t p confirm karna padega abhi nahi to account freeze"
+    }
+  ]
+}

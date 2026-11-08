@@ -1,0 +1,20 @@
+{
+  "id": "call-052-scam",
+  "title": "Real speakerphone call #52 (guardian): नमस्ते, कृषि मंत्रालय से आपके PM Kisan के 18000 अटके हुए हैं।",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 8.1,
+      "text": "नमस्ते, कृषि मंत्रालय से आपके PM Kisan के 18000 अटके हुए हैं।"
+    },
+    {
+      "t": 10.1,
+      "text": "अच्छा, कैसे मिलेंगे?"
+    },
+    {
+      "t": 15.3,
+      "text": "आधार number बताइए, फिर mobile पे एक code आएगा, वो भी बता दीजिए।"
+    }
+  ]
+}

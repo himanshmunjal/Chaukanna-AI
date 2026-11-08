@@ -1,0 +1,24 @@
+{
+  "id": "call-045-scam",
+  "title": "Real speakerphone call #45 (guardian): Amazon customer care से बोल रहा हूँ।",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 3.7,
+      "text": "Amazon customer care से बोल रहा हूँ।"
+    },
+    {
+      "t": 7.1,
+      "text": "आपका 2400 का रिफंड अटका हुआ है।"
+    },
+    {
+      "t": 9.8,
+      "text": "हां, वापस करना था एक सामान।"
+    },
+    {
+      "t": 15.4,
+      "text": "Play Store से AnyDesk download कीजिए, मैं आपके phone पर खुद कर दूंगा।"
+    }
+  ]
+}

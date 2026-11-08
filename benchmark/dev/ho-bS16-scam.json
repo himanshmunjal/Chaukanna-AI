@@ -1,0 +1,28 @@
+{
+  "id": "ho-bS16-scam",
+  "title": "Credit card upgrade fraud (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Sir HDFC se bol raha hu"
+    },
+    {
+      "t": 6,
+      "text": "Aapko lifetime free premium credit card offer hua hai"
+    },
+    {
+      "t": 10,
+      "text": "Koi annual charges toh nahi?"
+    },
+    {
+      "t": 14,
+      "text": "Nahi sir"
+    },
+    {
+      "t": 18,
+      "text": "Bas card number, CVV aur OTP se upgrade confirm karna hai"
+    }
+  ]
+}

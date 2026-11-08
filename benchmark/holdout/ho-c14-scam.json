@@ -1,0 +1,16 @@
+{
+  "id": "ho-c14-scam",
+  "title": "income tax refund (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "this is income tax department sir you have a refund of thirty four thousand rupees pending"
+    },
+    {
+      "t": 6,
+      "text": "kindly click on the link i have messaged and fill your net banking id and password for the credit"
+    }
+  ]
+}

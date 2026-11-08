@@ -1,0 +1,20 @@
+{
+  "id": "S058",
+  "title": "Job or task",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Telegram group join कीजिए, reviews लिखने के पैसे मिलेंगे।"
+    },
+    {
+      "t": 10,
+      "text": "कितने?"
+    },
+    {
+      "t": 15,
+      "text": "पहले 500 लगाओ तो 800 मिलेंगे, फिर बड़ा task करना।"
+    }
+  ]
+}

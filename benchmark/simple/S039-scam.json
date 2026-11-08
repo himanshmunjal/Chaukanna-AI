@@ -1,0 +1,20 @@
+{
+  "id": "S039",
+  "title": "Electricity, gas or SIM",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका SIM 2 घंटे में बंद हो जाएगा, KYC नहीं है।"
+    },
+    {
+      "t": 10,
+      "text": "मैं क्या करूँ?"
+    },
+    {
+      "t": 15,
+      "text": "121 को जो SMS जाएगा उसका code मुझे बता दीजिए।"
+    }
+  ]
+}

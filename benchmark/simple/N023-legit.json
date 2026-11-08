@@ -1,0 +1,20 @@
+{
+  "id": "N023",
+  "title": "Talking about scams",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "बेटा, कल एक call आई थी, कह रहा था lottery लगी है।"
+    },
+    {
+      "t": 10,
+      "text": "क्या किया?"
+    },
+    {
+      "t": 15,
+      "text": "काट दिया, मैं क्यों पैसे दूँ।"
+    }
+  ]
+}

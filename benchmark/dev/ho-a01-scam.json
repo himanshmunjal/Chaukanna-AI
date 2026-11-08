@@ -1,0 +1,28 @@
+{
+  "id": "ho-a01-scam",
+  "title": "Fake Power Grid Officer (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello, yeah am I talking to Mr"
+    },
+    {
+      "t": 6,
+      "text": "Sharma?"
+    },
+    {
+      "t": 10,
+      "text": "Look sir, I am calling from state electricity board office power house"
+    },
+    {
+      "t": 14,
+      "text": "your bill is pending since two months and connection will be disconnected by 9 PM tonight"
+    },
+    {
+      "t": 18,
+      "text": "Pay right now on this personal UPI link or give me your debit card details quickly or lights will go"
+    }
+  ]
+}

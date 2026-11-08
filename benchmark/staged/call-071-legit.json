@@ -1,0 +1,20 @@
+{
+  "id": "call-071-legit",
+  "title": "Real speakerphone call #71 (guardian): माँ, मैंने आपके account में 20000 transfer किए हैं दवाई के लिए।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 6.2,
+      "text": "माँ, मैंने आपके account में 20000 transfer किए हैं दवाई के लिए।"
+    },
+    {
+      "t": 9.4,
+      "text": "अच्छा बेटा, message आया था।"
+    },
+    {
+      "t": 13.9,
+      "text": "और हाँ, bank वाला कोई OTP मांगे तो मत देना।"
+    }
+  ]
+}

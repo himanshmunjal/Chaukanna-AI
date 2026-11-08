@@ -1,0 +1,20 @@
+{
+  "id": "N045",
+  "title": "Sales agents",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Credit card लेंगे सर?"
+    },
+    {
+      "t": 10,
+      "text": "नहीं चाहिए।"
+    },
+    {
+      "t": 15,
+      "text": "ठीक है, आपका दिन शुभ हो।"
+    }
+  ]
+}

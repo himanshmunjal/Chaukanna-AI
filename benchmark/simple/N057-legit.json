@@ -1,0 +1,20 @@
+{
+  "id": "N057",
+  "title": "Everyday chat",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Train 7 बजे की है।"
+    },
+    {
+      "t": 10,
+      "text": "station कौन छोड़ेगा?"
+    },
+    {
+      "t": 15,
+      "text": "भैया छोड़ देंगे।"
+    }
+  ]
+}

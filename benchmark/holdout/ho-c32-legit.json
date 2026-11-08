@@ -1,0 +1,20 @@
+{
+  "id": "ho-c32-legit",
+  "title": "friend casual (set C, scam_call_test_data.csv)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hey bro whats up long time"
+    },
+    {
+      "t": 6,
+      "text": "haha yeah i am free saturday lets go for the match"
+    },
+    {
+      "t": 10,
+      "text": "ok i will book tickets and send you money later no problem"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ho-c09-scam",
+  "title": "credit card upgrade (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "good afternoon ma'am calling from hdfc credit card department we are increasing your limit to three lakh free of cost"
+    },
+    {
+      "t": 6,
+      "text": "just confirm card number and the cvv on back and expiry for uh upgrade"
+    }
+  ]
+}

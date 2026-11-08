@@ -1,0 +1,20 @@
+{
+  "id": "S016",
+  "title": "Bank or KYC",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका PAN link नहीं है, कल से account freeze हो जाएगा।"
+    },
+    {
+      "t": 10,
+      "text": "कैसे link करूँ?"
+    },
+    {
+      "t": 15,
+      "text": "जो message आया है उसका code मुझे पढ़कर सुना दीजिए।"
+    }
+  ]
+}

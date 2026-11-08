@@ -1,0 +1,16 @@
+{
+  "id": "ho-c22-scam",
+  "title": "olx qr scan (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello sir olx pe aapka sofa dekha mujhe pasand hai paisa advance bhej raha hu"
+    },
+    {
+      "t": 6,
+      "text": "aap ye QR code scan karke pin daalo tabhi paisa aapke account mein aayega, scan karo na sir"
+    }
+  ]
+}

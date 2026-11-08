@@ -1,0 +1,20 @@
+{
+  "id": "call-066-legit",
+  "title": "Real speakerphone call #66 (guardian): Apollo Hospital reception से, आपके पति का operation है।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5.9,
+      "text": "Apollo Hospital reception से, आपके पति का operation है।"
+    },
+    {
+      "t": 7.5,
+      "text": "जी, पता है।"
+    },
+    {
+      "t": 14.2,
+      "text": "admission के time 25000 advance counter पे जमा कराना होगा, card या cash जो आपको ठीक लगे।"
+    }
+  ]
+}

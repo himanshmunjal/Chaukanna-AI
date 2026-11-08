@@ -1,0 +1,16 @@
+{
+  "id": "ho-c03-scam",
+  "title": "lottery win (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "congratulations sir you have won twenty five lakh in jio lucky draw"
+    },
+    {
+      "t": 6,
+      "text": "no no sir its real you are selected from mobile number only just pay processing fees of five thousand to claim ok"
+    }
+  ]
+}

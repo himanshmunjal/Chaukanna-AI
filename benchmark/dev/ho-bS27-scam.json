@@ -1,0 +1,32 @@
+{
+  "id": "ho-bS27-scam",
+  "title": "Fake job interview security deposit (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello sir, TCS HR department se bol raha hu"
+    },
+    {
+      "t": 6,
+      "text": "Aapka interview clear ho gaya hai"
+    },
+    {
+      "t": 10,
+      "text": "Sir interview clear ho gaya?"
+    },
+    {
+      "t": 14,
+      "text": "Offer letter kab milega?"
+    },
+    {
+      "t": 18,
+      "text": "Aaj hi"
+    },
+    {
+      "t": 22,
+      "text": "Lekin refundable laptop security deposit 3500 pay karna padega"
+    }
+  ]
+}

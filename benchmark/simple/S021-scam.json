@@ -1,0 +1,20 @@
+{
+  "id": "S021",
+  "title": "OTP with no scary words",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपके number पर गलती से मेरा code चला गया।"
+    },
+    {
+      "t": 10,
+      "text": "कौन सा code?"
+    },
+    {
+      "t": 15,
+      "text": "please बता दो भैया, मेरा जरूरी काम रुका है।"
+    }
+  ]
+}

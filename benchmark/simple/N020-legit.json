@@ -1,0 +1,20 @@
+{
+  "id": "N020",
+  "title": "Talking about scams",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "शर्मा जी के साथ बुरा हुआ, किसी ने police बनकर arrest की धमकी दी।"
+    },
+    {
+      "t": 10,
+      "text": "फिर?"
+    },
+    {
+      "t": 15,
+      "text": "उनके 2 लाख चले गए।"
+    }
+  ]
+}

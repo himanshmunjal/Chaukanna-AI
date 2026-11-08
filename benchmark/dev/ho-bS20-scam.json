@@ -1,0 +1,28 @@
+{
+  "id": "ho-bS20-scam",
+  "title": "Work-from-home task scam (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello madam, part-time job hai"
+    },
+    {
+      "t": 6,
+      "text": "Bas YouTube videos like karne hain aur hotel reviews dene hain"
+    },
+    {
+      "t": 10,
+      "text": "Payment kaise milega?"
+    },
+    {
+      "t": 14,
+      "text": "Pehle 150 rupaye milenge"
+    },
+    {
+      "t": 18,
+      "text": "Phir VIP task unlock karne ke liye 5000 deposit karna hoga"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ho-a05-scam",
+  "title": "Bank Account Suspended / Fake KYC (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Urgent message from SBI main branch"
+    },
+    {
+      "t": 6,
+      "text": "sir your net banking access and debit card are blocked due to pending KYC update"
+    },
+    {
+      "t": 10,
+      "text": "To unblock immediately, please tell me the 16-digit card number on front, expiry date, and the 6-digit OTP code sent to your phone"
+    }
+  ]
+}

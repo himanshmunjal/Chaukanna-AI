@@ -1,0 +1,20 @@
+{
+  "id": "ho-a18-scam",
+  "title": "Medical Emergency Fundraiser / Fake NGO (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello sir, calling from Child Hope Life NGO"
+    },
+    {
+      "t": 6,
+      "text": "A 4-year-old child urgently requires heart surgery in AIIMS hospital within 2 hours or he won't survive"
+    },
+    {
+      "t": 10,
+      "text": "Send whatever donation you can immediately to our emergency Google Pay number"
+    }
+  ]
+}

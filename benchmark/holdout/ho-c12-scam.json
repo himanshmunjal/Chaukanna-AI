@@ -1,0 +1,16 @@
+{
+  "id": "ho-c12-scam",
+  "title": "gas subsidy (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello gas agency se bol rahe hain aapki subsidy ka paisa atka hua hai"
+    },
+    {
+      "t": 6,
+      "text": "bas aapke account ka detail aur jo message aaya hai wo pin bata dijiye taki credit ho jaye"
+    }
+  ]
+}

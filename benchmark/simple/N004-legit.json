@@ -1,0 +1,20 @@
+{
+  "id": "N004",
+  "title": "Real bank alert",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Bank से, आपकी FD अगले हफ्ते पूरी हो रही है।"
+    },
+    {
+      "t": 10,
+      "text": "तो क्या करूँ?"
+    },
+    {
+      "t": 15,
+      "text": "branch आकर renew करा लीजिए, कोई जल्दी नहीं है।"
+    }
+  ]
+}

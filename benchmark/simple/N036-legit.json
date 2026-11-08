@@ -1,0 +1,20 @@
+{
+  "id": "N036",
+  "title": "Hospital or doctor",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Hospital से, आपकी माँ को आज छुट्टी मिलेगी।"
+    },
+    {
+      "t": 10,
+      "text": "कितना बिल है?"
+    },
+    {
+      "t": 15,
+      "text": "counter पर बता देंगे, शाम तक आ जाइए।"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "N002",
+  "title": "Real bank alert",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "SBI से call है, आपके card से अभी 2000 का payment हुआ।"
+    },
+    {
+      "t": 10,
+      "text": "हाँ, मैंने किया।"
+    },
+    {
+      "t": 15,
+      "text": "ठीक है, धन्यवाद, आपका दिन शुभ हो।"
+    }
+  ]
+}

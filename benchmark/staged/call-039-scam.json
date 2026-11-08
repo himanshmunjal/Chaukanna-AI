@@ -1,0 +1,20 @@
+{
+  "id": "call-039-scam",
+  "title": "Real speakerphone call #39 (guardian): मैडम, SBI से बोल रहा हूँ। आपका KYC expire हो गया है, आज रात account बं…",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 8.9,
+      "text": "मैडम, SBI से बोल रहा हूँ। आपका KYC expire हो गया है, आज रात account बंद हो जाएगा।"
+    },
+    {
+      "t": 29.8,
+      "text": "तो मैं branch आ जाती हूँ कल। नहीं नहीं, branch मत जाइए, line बहुत लंबी है। मैं यहीं से कर देता हूँ। अच्छा।"
+    },
+    {
+      "t": 33.3,
+      "text": "अभी एक OTP आएगा, बस वो बता दीजिए।"
+    }
+  ]
+}

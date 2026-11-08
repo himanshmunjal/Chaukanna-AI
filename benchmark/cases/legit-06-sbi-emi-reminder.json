@@ -1,0 +1,10 @@
+{
+  "title": "Genuine SBI EMI reminder (mentions OTP only as advice)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    { "t": 1,  "text": "Good morning sir, this is SBI calling about your car loan." },
+    { "t": 6,  "text": "Your EMI of twelve thousand rupees is due on the seventh. You can pay it in the YONO app." },
+    { "t": 12, "text": "Please never share your OTP or PIN with anyone. Have a nice day." }
+  ]
+}

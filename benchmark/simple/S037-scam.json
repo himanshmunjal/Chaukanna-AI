@@ -1,0 +1,20 @@
+{
+  "id": "S037",
+  "title": "Electricity, gas or SIM",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "बिजली विभाग से, आज रात 9 बजे आपका connection कट जाएगा।"
+    },
+    {
+      "t": 10,
+      "text": "bill तो भरा था।"
+    },
+    {
+      "t": 15,
+      "text": "update नहीं हुआ, AnyDesk डाउनलोड कीजिए, मैं ठीक कर देता हूँ।"
+    }
+  ]
+}

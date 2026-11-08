@@ -1,0 +1,20 @@
+{
+  "id": "ho-a30-legit",
+  "title": "Path Lab Sample Collection Scheduling (set A, pasted)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hi sir, path lab phlebotomist here"
+    },
+    {
+      "t": 6,
+      "text": "I have assigned home sample collection for your routine blood test tomorrow morning at 7:30 AM"
+    },
+    {
+      "t": 10,
+      "text": "Please ensure 10 to 12 hours fasting before I arrive"
+    }
+  ]
+}

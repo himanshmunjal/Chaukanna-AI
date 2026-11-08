@@ -1,0 +1,20 @@
+{
+  "id": "S068",
+  "title": "Instant loan",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "बिना कागज के loan, 10 मिनट में।"
+    },
+    {
+      "t": 10,
+      "text": "कैसे?"
+    },
+    {
+      "t": 15,
+      "text": "ये app डालिए, contacts और photos की permission दीजिए।"
+    }
+  ]
+}

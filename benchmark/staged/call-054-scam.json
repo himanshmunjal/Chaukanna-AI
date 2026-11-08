@@ -1,0 +1,24 @@
+{
+  "id": "call-054-scam",
+  "title": "Real speakerphone call #54 (guardian): Good morning. This is the Income Tax Department.",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 4.5,
+      "text": "Good morning. This is the Income Tax Department."
+    },
+    {
+      "t": 7.7,
+      "text": "You have a refund of 46,000 rupees pending."
+    },
+    {
+      "t": 10.4,
+      "text": "Oh, I did not know that."
+    },
+    {
+      "t": 15.7,
+      "text": "To release it, please click the link we sent and enter your card details and PIN."
+    }
+  ]
+}

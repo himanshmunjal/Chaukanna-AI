@@ -1,0 +1,24 @@
+{
+  "id": "ho-a22-legit",
+  "title": "Official Bank Transaction Verification (set A, pasted)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Good afternoon, this is ICICI Bank Fraud Prevention department calling regarding your credit card ending in 4021"
+    },
+    {
+      "t": 6,
+      "text": "We noticed an international transaction of $450 at 1:15 AM today"
+    },
+    {
+      "t": 10,
+      "text": "We do NOT need your card number or OTP"
+    },
+    {
+      "t": 14,
+      "text": "Please confirm if you made this transaction by saying Yes or No"
+    }
+  ]
+}

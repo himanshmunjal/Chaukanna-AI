@@ -1,0 +1,20 @@
+{
+  "id": "S027",
+  "title": "Relative in trouble",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "मैं hospital से बोल रहा हूँ, आपकी बेटी की हालत खराब है।"
+    },
+    {
+      "t": 10,
+      "text": "क्या हुआ?"
+    },
+    {
+      "t": 15,
+      "text": "operation के लिए अभी 1 लाख Google Pay करिए।"
+    }
+  ]
+}

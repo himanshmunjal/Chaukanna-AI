@@ -1,0 +1,28 @@
+{
+  "id": "call-038-scam",
+  "title": "Real speakerphone call #38 (guardian): FedEx मुंबई से बोल रहे हैं। आपके नाम का parcel ताइवान जा रहा है, custo…",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2.7,
+      "text": "Hello।"
+    },
+    {
+      "t": 9.3,
+      "text": "FedEx मुंबई से बोल रहे हैं। आपके नाम का parcel ताइवान जा रहा है, customs ने पकड़ा है।"
+    },
+    {
+      "t": 11.2,
+      "text": "मैंने कोई parcel नहीं भेजा।"
+    },
+    {
+      "t": 17.9,
+      "text": "उसमें 5 passport और drugs मिले हैं। मैं call मुंबई crime branch को transfer कर रहा हूँ।"
+    },
+    {
+      "t": 25.3,
+      "text": "अरे!"
+    }
+  ]
+}

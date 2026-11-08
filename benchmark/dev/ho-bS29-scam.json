@@ -1,0 +1,24 @@
+{
+  "id": "ho-bS29-scam",
+  "title": "Fake charity / disaster relief (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Namaste sir, hum flood victims ke liye relief fund collect kar rahe hain"
+    },
+    {
+      "t": 6,
+      "text": "NGO ka naam kya hai?"
+    },
+    {
+      "t": 10,
+      "text": "Sir details baad mein bhejenge"
+    },
+    {
+      "t": 14,
+      "text": "Abhi contribution ke liye QR scan karke payment kar dijiye"
+    }
+  ]
+}

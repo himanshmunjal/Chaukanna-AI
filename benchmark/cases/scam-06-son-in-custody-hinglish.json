@@ -1,0 +1,11 @@
+{
+  "title": "'Your son is in police custody' (Hinglish)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    { "t": 1,  "text": "Aap Ramesh ke papa bol rahe hain? Main police station se bol raha hoon." },
+    { "t": 6,  "text": "Aapka beta ek ladki ke case mein pakda gaya hai, abhi custody mein hai." },
+    { "t": 12, "text": "Agar aap chahte ho ki FIR na ho toh abhi ke abhi pachaas hazaar paise bhejo." },
+    { "t": 18, "text": "Kisi ko mat batana warna case bigad jayega." }
+  ]
+}

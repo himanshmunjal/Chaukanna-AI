@@ -1,0 +1,20 @@
+{
+  "id": "S032",
+  "title": "Lottery or prize",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Flipkart lucky draw में आपको car मिली है।"
+    },
+    {
+      "t": 10,
+      "text": "सच में?"
+    },
+    {
+      "t": 15,
+      "text": "delivery से पहले registration के 9999 भेज दीजिए।"
+    }
+  ]
+}

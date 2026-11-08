@@ -1,0 +1,20 @@
+{
+  "id": "S034",
+  "title": "Lottery or prize",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका number lottery में आया है, 5 लाख मिलेंगे।"
+    },
+    {
+      "t": 10,
+      "text": "कैसे मिलेंगे?"
+    },
+    {
+      "t": 15,
+      "text": "ये link खोलिए और card की details भर दीजिए।"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "S002",
+  "title": "Digital arrest",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "CBI officer बोल रहा हूँ, आपके Aadhaar से 6 bank account खुले हैं।"
+    },
+    {
+      "t": 10,
+      "text": "ये कैसे हो सकता है?"
+    },
+    {
+      "t": 15,
+      "text": "जाँच के लिए अपने पैसे हमारे सरकारी account में डालिए, बाद में वापस मिल जाएँगे।"
+    }
+  ]
+}

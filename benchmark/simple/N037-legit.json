@@ -1,0 +1,20 @@
+{
+  "id": "N037",
+  "title": "EMI or reminders",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Axis Bank की तरफ से reminder, 12450 की EMI 5 तारीख को है।"
+    },
+    {
+      "t": 10,
+      "text": "account में पैसे हैं।"
+    },
+    {
+      "t": 15,
+      "text": "auto debit हो जाएगा, धन्यवाद।"
+    }
+  ]
+}

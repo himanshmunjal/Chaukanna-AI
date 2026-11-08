@@ -1,0 +1,20 @@
+{
+  "id": "S001",
+  "title": "Digital arrest",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "मैं Mumbai crime branch से बोल रहा हूँ। आपके नाम पर money laundering का case है।"
+    },
+    {
+      "t": 10,
+      "text": "मैंने कुछ नहीं किया।"
+    },
+    {
+      "t": 15,
+      "text": "आप digital arrest में हैं, video call पर रहिए और किसी को मत बताइए।"
+    }
+  ]
+}

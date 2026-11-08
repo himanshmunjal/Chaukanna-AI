@@ -1,0 +1,16 @@
+{
+  "id": "ho-a21-scam",
+  "title": "Fake Gas Pipeline Connection Bill (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Piped gas supply notice: Your Adani Total Gas connection surcharge is overdue by 1,800 rupees"
+    },
+    {
+      "t": 6,
+      "text": "If payment is not completed within 30 minutes on this link, field technician will lock your main valve"
+    }
+  ]
+}

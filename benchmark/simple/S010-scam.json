@@ -1,0 +1,20 @@
+{
+  "id": "S010",
+  "title": "Courier or customs",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "India Post से बोल रहे हैं, address गलत होने से parcel वापस जाएगा।"
+    },
+    {
+      "t": 10,
+      "text": "अच्छा?"
+    },
+    {
+      "t": 15,
+      "text": "message में जो link है उस पर 25 rupees भर दीजिए और card डाल दीजिए।"
+    }
+  ]
+}

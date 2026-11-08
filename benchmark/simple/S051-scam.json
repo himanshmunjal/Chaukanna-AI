@@ -1,0 +1,20 @@
+{
+  "id": "S051",
+  "title": "Refund or UPI",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "मैं army officer हूँ, आपका flat किराए पर लेना है।"
+    },
+    {
+      "t": 10,
+      "text": "जी।"
+    },
+    {
+      "t": 15,
+      "text": "advance भेजने के लिए QR भेजा है, scan करके PIN डालिए।"
+    }
+  ]
+}

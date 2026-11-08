@@ -1,0 +1,28 @@
+{
+  "id": "ho-bN09-legit",
+  "title": "Genuine restaurant booking (set B, call_scam_test_dataset.csv)",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello sir, Taj restaurant se call hai"
+    },
+    {
+      "t": 6,
+      "text": "Aapki 7 PM ki table booking confirm karni thi"
+    },
+    {
+      "t": 10,
+      "text": "Yes, 4 people hain"
+    },
+    {
+      "t": 14,
+      "text": "Perfect sir, reservation confirmed hai"
+    },
+    {
+      "t": 18,
+      "text": "Thank you"
+    }
+  ]
+}

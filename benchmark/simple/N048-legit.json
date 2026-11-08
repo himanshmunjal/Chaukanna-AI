@@ -1,0 +1,20 @@
+{
+  "id": "N048",
+  "title": "Sales agents",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Water purifier की service का समय हो गया।"
+    },
+    {
+      "t": 10,
+      "text": "कितना लगेगा?"
+    },
+    {
+      "t": 15,
+      "text": "800, technician आकर बताएगा, घर आकर ही पैसे दीजिएगा।"
+    }
+  ]
+}

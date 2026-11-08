@@ -1,0 +1,16 @@
+{
+  "id": "call-057-scam",
+  "title": "Real speakerphone call #57 (guardian): Ma'am, I am talking from fraud department.",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 4.6,
+      "text": "Ma'am, I am talking from fraud department."
+    },
+    {
+      "t": 8.8,
+      "text": "कभी किसी के साथ OTP share मत कीजिए, बहुत fraud हो रहे हैं।"
+    }
+  ]
+}

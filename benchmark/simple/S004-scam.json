@@ -1,0 +1,20 @@
+{
+  "id": "S004",
+  "title": "Digital arrest",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Narcotics department से हूँ, आपके नाम से drugs पकड़ी गई हैं।"
+    },
+    {
+      "t": 10,
+      "text": "मुझे नहीं पता।"
+    },
+    {
+      "t": 15,
+      "text": "Skype पर आइए, कमरा बंद कर लीजिए, घर में किसी से बात नहीं करनी।"
+    }
+  ]
+}

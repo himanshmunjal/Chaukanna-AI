@@ -1,0 +1,20 @@
+{
+  "id": "N006",
+  "title": "Real bank alert",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Bank से सूचना है, कल रात 12 से 2 बजे app बंद रहेगा।"
+    },
+    {
+      "t": 10,
+      "text": "अच्छा।"
+    },
+    {
+      "t": 15,
+      "text": "maintenance है, कोई जानकारी नहीं चाहिए, धन्यवाद।"
+    }
+  ]
+}

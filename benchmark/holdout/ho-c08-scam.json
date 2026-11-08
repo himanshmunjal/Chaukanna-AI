@@ -1,0 +1,16 @@
+{
+  "id": "ho-c08-scam",
+  "title": "wrong upi refund (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "sir sorry sorry mistake se aapke phonepe pe paanch hazaar chale gaye mere account se"
+    },
+    {
+      "t": 6,
+      "text": "please wapas bhej do na uh main bhi gareeb hu, ye number pe bhej do 98xxxx"
+    }
+  ]
+}

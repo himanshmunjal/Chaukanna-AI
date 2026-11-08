@@ -1,0 +1,20 @@
+{
+  "id": "ho-a15-scam",
+  "title": "Fake Credit Card Reward Points Expiry (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Sir, your HDFC bank reward points worth 11,450 rupees are expiring midnight tonight"
+    },
+    {
+      "t": 6,
+      "text": "Redeem points into cash directly in account"
+    },
+    {
+      "t": 10,
+      "text": "Click on the link sent to your phone and enter CVV and net banking password to confirm credit"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "N030",
+  "title": "Real police or office",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Beat police से, रात को गश्त बढ़ाई है।"
+    },
+    {
+      "t": 10,
+      "text": "अच्छा।"
+    },
+    {
+      "t": 15,
+      "text": "कुछ अजीब दिखे तो 112 पर बताइए।"
+    }
+  ]
+}

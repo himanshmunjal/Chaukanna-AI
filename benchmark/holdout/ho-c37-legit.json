@@ -1,0 +1,20 @@
+{
+  "id": "ho-c37-legit",
+  "title": "school teacher (set C, scam_call_test_data.csv)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello mrs sharma this is anita from rohan's school"
+    },
+    {
+      "t": 6,
+      "text": "uh there is a parent teacher meeting on friday ten am"
+    },
+    {
+      "t": 10,
+      "text": "also fees for this term are due by month end you can pay at school office"
+    }
+  ]
+}

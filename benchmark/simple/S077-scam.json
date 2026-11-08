@@ -1,0 +1,20 @@
+{
+  "id": "S077",
+  "title": "Government benefit",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Income Tax से, आपका 40000 refund आया है।"
+    },
+    {
+      "t": 10,
+      "text": "बताइए।"
+    },
+    {
+      "t": 15,
+      "text": "card number और expiry date दीजिए, तुरंत डालते हैं।"
+    }
+  ]
+}

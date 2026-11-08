@@ -1,0 +1,28 @@
+{
+  "id": "call-065-legit",
+  "title": "Real speakerphone call #65 (guardian): नमस्ते, local थाने।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 3.7,
+      "text": "नमस्ते, local थाने।"
+    },
+    {
+      "t": 8.3,
+      "text": "सिर्फ constable यादव, आपके किराएदार की verification है।"
+    },
+    {
+      "t": 9.7,
+      "text": "जी बताइए।"
+    },
+    {
+      "t": 13.9,
+      "text": "कल सुबह थाने आ जाइए, rent agreement और Aadhaar copy ले लेने।"
+    },
+    {
+      "t": 16.2,
+      "text": "ठीक है जी।"
+    }
+  ]
+}

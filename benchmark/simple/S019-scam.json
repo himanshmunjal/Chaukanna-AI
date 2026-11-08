@@ -1,0 +1,20 @@
+{
+  "id": "S019",
+  "title": "OTP with no scary words",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आंटी, phone पर 6 अंकों वाला message आया होगा।"
+    },
+    {
+      "t": 10,
+      "text": "हाँ, आया है।"
+    },
+    {
+      "t": 15,
+      "text": "बस वो नंबर पढ़ दीजिए, आपका काम हो जाएगा।"
+    }
+  ]
+}

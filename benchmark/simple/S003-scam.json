@@ -1,0 +1,20 @@
+{
+  "id": "S003",
+  "title": "Digital arrest",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपके खिलाफ arrest warrant निकला है, आज शाम तक police आएगी।"
+    },
+    {
+      "t": 10,
+      "text": "अब क्या करूँ?"
+    },
+    {
+      "t": 15,
+      "text": "80000 जमा करेंगे तो case बंद हो जाएगा, अभी करना होगा।"
+    }
+  ]
+}

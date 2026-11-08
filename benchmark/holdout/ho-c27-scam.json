@@ -1,0 +1,16 @@
+{
+  "id": "ho-c27-scam",
+  "title": "telecom cashback (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "airtel dhamaka offer sir aapko five hundred cashback mil raha hai"
+    },
+    {
+      "t": 6,
+      "text": "bas ye link kholo aur apna UPI PIN daalo cashback receive karne ke liye, receive karne ke liye pin dalna padta hai"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ho-a14-scam",
+  "title": "Loan Approval Without CIBIL Check (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Congratulation sir!"
+    },
+    {
+      "t": 6,
+      "text": "Pre-approved personal loan of 5 Lakhs approved instantly at 2% interest rate per annum, no CIBIL score or income proof needed"
+    },
+    {
+      "t": 10,
+      "text": "Pay small registration processing fee of 2,999 to release loan amount"
+    }
+  ]
+}

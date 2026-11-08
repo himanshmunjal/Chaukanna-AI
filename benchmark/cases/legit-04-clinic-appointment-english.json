@@ -1,0 +1,10 @@
+{
+  "title": "Clinic appointment confirmation (English)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    { "t": 1,  "text": "Hello, I am calling from City Care clinic to confirm your appointment with Doctor Mehta." },
+    { "t": 7,  "text": "It is tomorrow at 11 am. Please bring your old prescription and reports." },
+    { "t": 12, "text": "If you want to reschedule, you can call the clinic reception anytime." }
+  ]
+}

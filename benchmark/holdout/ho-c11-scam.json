@@ -1,0 +1,20 @@
+{
+  "id": "ho-c11-scam",
+  "title": "insurance bonus (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "sir your LIC policy has matured uh bonus of eight lakh is pending in your name"
+    },
+    {
+      "t": 6,
+      "text": "for release you must pay GST charges of twelve thousand to this account"
+    },
+    {
+      "t": 10,
+      "text": "sir government rule hai sir"
+    }
+  ]
+}

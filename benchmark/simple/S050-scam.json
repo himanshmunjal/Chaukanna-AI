@@ -1,0 +1,20 @@
+{
+  "id": "S050",
+  "title": "Refund or UPI",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका 1200 का refund process करना है।"
+    },
+    {
+      "t": 10,
+      "text": "अच्छा।"
+    },
+    {
+      "t": 15,
+      "text": "PhonePe पर request आई होगी, approve करके PIN डाल दीजिए, पैसे आ जाएँगे।"
+    }
+  ]
+}

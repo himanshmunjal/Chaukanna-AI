@@ -1,0 +1,20 @@
+{
+  "id": "N058",
+  "title": "Everyday chat",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "बच्चे का result आ गया, 92 percent आए।"
+    },
+    {
+      "t": 10,
+      "text": "वाह, बधाई हो!"
+    },
+    {
+      "t": 15,
+      "text": "मिठाई लेकर आते हैं।"
+    }
+  ]
+}

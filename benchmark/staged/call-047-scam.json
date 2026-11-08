@@ -1,0 +1,20 @@
+{
+  "id": "call-047-scam",
+  "title": "Real speakerphone call #47 (guardian): मैडम, आपका 1200 का refund process करना है। आपका PhonePe पे एक request …",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 8.3,
+      "text": "मैडम, आपका 1200 का refund process करना है। आपका PhonePe पे एक request आई होगी।"
+    },
+    {
+      "t": 12.2,
+      "text": "हाँ, कुछ आया है, पर इसमें तो pay लिखा है।"
+    },
+    {
+      "t": 16.9,
+      "text": "वो normal process है। approve करके PIN डाल दीजिए, पैसे आ जाएंगे।"
+    }
+  ]
+}

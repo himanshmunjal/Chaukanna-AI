@@ -1,0 +1,20 @@
+{
+  "id": "call-069-legit",
+  "title": "Real speakerphone call #69 (guardian): आंटी, Gupta store से आपका 1850 का bill हो गया है, सामान भेज दीजिए।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 8.4,
+      "text": "आंटी, Gupta store से आपका 1850 का bill हो गया है, सामान भेज दीजिए।"
+    },
+    {
+      "t": 10.7,
+      "text": "अच्छा, कैसे दूँ?"
+    },
+    {
+      "t": 15.7,
+      "text": "shop पे QR लगा है, ये लड़की को cash दे देना जब ठीक लगे।"
+    }
+  ]
+}

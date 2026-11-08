@@ -1,0 +1,28 @@
+{
+  "id": "ho-bS15-scam",
+  "title": "Fake electricity subsidy (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Madam aapko 2000 electricity subsidy milegi"
+    },
+    {
+      "t": 6,
+      "text": "Aapka account eligible hai"
+    },
+    {
+      "t": 10,
+      "text": "Automatically aa jayegi?"
+    },
+    {
+      "t": 14,
+      "text": "Nahi madam, pehle ek QR code scan karna padega"
+    },
+    {
+      "t": 18,
+      "text": "Uske baad bank verification complete ho jayega"
+    }
+  ]
+}

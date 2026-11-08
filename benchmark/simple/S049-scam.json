@@ -1,0 +1,20 @@
+{
+  "id": "S049",
+  "title": "Refund or UPI",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आंटी जी, गलती से आपके number पर 5000 चले गए।"
+    },
+    {
+      "t": 10,
+      "text": "मुझे पता नहीं।"
+    },
+    {
+      "t": 15,
+      "text": "message आया होगा, please वापस भेज दीजिए।"
+    }
+  ]
+}

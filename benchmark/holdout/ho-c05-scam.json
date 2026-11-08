@@ -1,0 +1,16 @@
+{
+  "id": "ho-c05-scam",
+  "title": "digital arrest (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "i am inspector sharma from cyber crime branch CBI your aadhaar is linked to money laundering case"
+    },
+    {
+      "t": 6,
+      "text": "you are under digital arrest do not disconnect this video call and do not tell anyone family also or you will be arrested"
+    }
+  ]
+}

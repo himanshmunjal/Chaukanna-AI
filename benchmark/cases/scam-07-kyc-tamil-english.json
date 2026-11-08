@@ -1,0 +1,10 @@
+{
+  "title": "KYC expiry, OTP request (Tamil + English)",
+  "label": "scam",
+  "language": "ta",
+  "lines": [
+    { "t": 1,  "text": "Vanakkam sir, naan unga bank KYC department la irundhu pesuren." },
+    { "t": 6,  "text": "Unga KYC expire aagiduchu, inniku update pannalaina account block aagidum." },
+    { "t": 13, "text": "Ippo unga phone ku oru OTP varum, adha sollunga." }
+  ]
+}

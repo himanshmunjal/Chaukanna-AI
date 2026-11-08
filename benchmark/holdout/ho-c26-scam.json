@@ -1,0 +1,16 @@
+{
+  "id": "ho-c26-scam",
+  "title": "mobile tower rent (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "sir aapki chhat par jio tower lagana hai monthly rent fifty thousand milega advance of three lakh"
+    },
+    {
+      "t": 6,
+      "text": "uh sirf agreement fees aur NOC ke liye pachas hazaar bhejna padega pehle"
+    }
+  ]
+}

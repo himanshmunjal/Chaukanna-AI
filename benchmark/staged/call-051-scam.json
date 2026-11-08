@@ -1,0 +1,20 @@
+{
+  "id": "call-051-scam",
+  "title": "Real speakerphone call #51 (guardian): आपका 5,00,000 का loan pre-approved है, कोई CIBIL नहीं चाहिए।",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 7.2,
+      "text": "आपका 5,00,000 का loan pre-approved है, कोई CIBIL नहीं चाहिए।"
+    },
+    {
+      "t": 9.4,
+      "text": "मैंने apply नहीं किया।"
+    },
+    {
+      "t": 17,
+      "text": "बैंक ने खुद select किया है, बस 2999 file charge भेज दीजिए। loan आज ही आ जाएगा।"
+    }
+  ]
+}

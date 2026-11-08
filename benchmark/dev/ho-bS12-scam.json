@@ -1,0 +1,24 @@
+{
+  "id": "ho-bS12-scam",
+  "title": "Fake government subsidy (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Namaste madam, government housing subsidy department se bol rahe hain"
+    },
+    {
+      "t": 6,
+      "text": "Aapka 40,000 rupaye ka benefit approve hua hai"
+    },
+    {
+      "t": 10,
+      "text": "Oh, thank you"
+    },
+    {
+      "t": 14,
+      "text": "Bas application activation ke liye 999 rupaye bhej dijiye"
+    }
+  ]
+}

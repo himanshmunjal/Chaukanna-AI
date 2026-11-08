@@ -1,0 +1,20 @@
+{
+  "id": "S047",
+  "title": "Tech support or remote access",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Traffic challan का app है, उसे install करना जरूरी है।"
+    },
+    {
+      "t": 10,
+      "text": "कैसे?"
+    },
+    {
+      "t": 15,
+      "text": "WhatsApp पर apk भेजा है, उस पर click करके allow कर दीजिए।"
+    }
+  ]
+}

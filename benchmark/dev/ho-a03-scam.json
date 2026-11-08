@@ -1,0 +1,20 @@
+{
+  "id": "ho-a03-scam",
+  "title": "Lottery / Lucky Draw Prize (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello congratulations sir!"
+    },
+    {
+      "t": 6,
+      "text": "Your mobile number was selected in KBC Mega Lucky Draw, you won twenty-five lakh rupees cash!"
+    },
+    {
+      "t": 10,
+      "text": "To release prize money into bank account, just pay government GST and processing fee of 4,999 rupees via PhonePe right now"
+    }
+  ]
+}

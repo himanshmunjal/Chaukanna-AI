@@ -1,0 +1,11 @@
+{
+  "title": "Genuine loan EMI reminder (English)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    { "t": 1,  "text": "Good afternoon, this is a courtesy call from your bank's loan servicing team." },
+    { "t": 6,  "text": "Your home loan EMI of 18,400 rupees is due on the 5th of this month." },
+    { "t": 12, "text": "Please keep sufficient balance in your account. You can also pay through the official app." },
+    { "t": 18, "text": "Please never share your OTP or PIN with anyone, the bank will never ask for it. Thank you." }
+  ]
+}

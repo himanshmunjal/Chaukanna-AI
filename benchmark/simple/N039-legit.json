@@ -1,0 +1,20 @@
+{
+  "id": "N039",
+  "title": "EMI or reminders",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका LIC premium अगले महीने है।"
+    },
+    {
+      "t": 10,
+      "text": "याद है।"
+    },
+    {
+      "t": 15,
+      "text": "app से या branch में भर सकते हैं।"
+    }
+  ]
+}

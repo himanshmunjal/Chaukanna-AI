@@ -1,0 +1,20 @@
+{
+  "id": "call-060-legit",
+  "title": "Real speakerphone call #60 (guardian): मैडम, HDFC Bank fraud team से कल रात 45000 का transaction क्या आपने कि…",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 9.4,
+      "text": "मैडम, HDFC Bank fraud team से कल रात 45000 का transaction क्या आपने किया था?"
+    },
+    {
+      "t": 12,
+      "text": "नहीं, मैंने नहीं किया।"
+    },
+    {
+      "t": 19.6,
+      "text": "ठीक है, card block कर दिया है। हम OTP या PIN कभी नहीं मांगते। branch से नया card ले लीजिए।"
+    }
+  ]
+}

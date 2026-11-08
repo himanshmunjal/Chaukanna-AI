@@ -1,0 +1,20 @@
+{
+  "id": "ho-a19-scam",
+  "title": "Fastag Deduction / Vehicle Toll Fraud (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "NHAI Fastag alert"
+    },
+    {
+      "t": 6,
+      "text": "your vehicle toll was wrongfully charged twice 750 rupees at toll plaza"
+    },
+    {
+      "t": 10,
+      "text": "To process immediate refund, please share the OTP received on your mobile registered with vehicle"
+    }
+  ]
+}

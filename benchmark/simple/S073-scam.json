@@ -1,0 +1,20 @@
+{
+  "id": "S073",
+  "title": "Government benefit",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "PM Kisan की किस्त रुकी है।"
+    },
+    {
+      "t": 10,
+      "text": "क्यों?"
+    },
+    {
+      "t": 15,
+      "text": "Aadhaar नंबर और जो OTP आएगा बता दीजिए, 6000 आ जाएँगे।"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ho-a28-legit",
+  "title": "Real Estate Broker Property Follow-up (set A, pasted)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello sir, I am Rajesh from City Realty"
+    },
+    {
+      "t": 6,
+      "text": "You inquired on Housing.com about 3 BHK apartments in Sector 62 last week"
+    },
+    {
+      "t": 10,
+      "text": "Do you have time this Sunday for a site visit to check sample flats?"
+    }
+  ]
+}

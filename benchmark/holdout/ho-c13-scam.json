@@ -1,0 +1,24 @@
+{
+  "id": "ho-c13-scam",
+  "title": "family emergency voice clone (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "nana its me rahul i had an accident"
+    },
+    {
+      "t": 6,
+      "text": "please dont tell mummy"
+    },
+    {
+      "t": 10,
+      "text": "the police are asking for fifty thousand right now otherwise they will keep me"
+    },
+    {
+      "t": 14,
+      "text": "please send on this upi quickly nana please"
+    }
+  ]
+}

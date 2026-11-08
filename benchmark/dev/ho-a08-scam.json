@@ -1,0 +1,24 @@
+{
+  "id": "ho-a08-scam",
+  "title": "Fake Job Offer / Overseas Work Visa (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Greetings from Global Gulf Recruiting Agency"
+    },
+    {
+      "t": 6,
+      "text": "Your profile is selected for Data Analyst role in Dubai package 18 LPA"
+    },
+    {
+      "t": 10,
+      "text": "No interview required"
+    },
+    {
+      "t": 14,
+      "text": "You just need to pay medical checkup fee and visa stamping charges 12,500 rupees to our accountant today itself"
+    }
+  ]
+}

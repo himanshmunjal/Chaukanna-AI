@@ -1,0 +1,10 @@
+{
+  "title": "'AC service man' says share OTP so he can get paid (real test, Hindi)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    { "t": 3,  "text": "नमस्ते।" },
+    { "t": 8,  "text": "दादी, अभी आपने एक अपने घर में service करवाई थी AC की?" },
+    { "t": 19, "text": "वो service मैंने करी थी और उसके पैसे आपने मेरे को भेजने हैं, तो उसके लिए OTP आएगा। आप वो OTP please मेरे साथ share कर दीजिए।" }
+  ]
+}

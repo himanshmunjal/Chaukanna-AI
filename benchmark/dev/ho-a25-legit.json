@@ -1,0 +1,24 @@
+{
+  "id": "ho-a25-legit",
+  "title": "Flight Delay Notification (set A, pasted)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "IndiGo airlines automated update for flight 6E-204 to Bengaluru"
+    },
+    {
+      "t": 6,
+      "text": "Your flight is delayed by 45 minutes due to air traffic control congestion"
+    },
+    {
+      "t": 10,
+      "text": "New departure time is 18:30 hours"
+    },
+    {
+      "t": 14,
+      "text": "We regret the inconvenience"
+    }
+  ]
+}

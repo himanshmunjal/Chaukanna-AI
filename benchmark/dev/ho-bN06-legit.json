@@ -1,0 +1,28 @@
+{
+  "id": "ho-bN06-legit",
+  "title": "Genuine college placement call (set B, call_scam_test_dataset.csv)",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello Himansh, placement cell se bol raha hu"
+    },
+    {
+      "t": 6,
+      "text": "Kal 10 AM pe company ka technical interview schedule hua hai"
+    },
+    {
+      "t": 10,
+      "text": "Sir online hoga ya offline?"
+    },
+    {
+      "t": 14,
+      "text": "Offline, lab 204 mein report karna"
+    },
+    {
+      "t": 18,
+      "text": "Resume ki two copies le aana"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ho-c18-scam",
+  "title": "investment tips (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello sir i am from sebi registered analyst group we give guaranteed hundred percent profit in stock"
+    },
+    {
+      "t": 6,
+      "text": "join our vip whatsapp group pay twenty thousand and first trade tomorrow itself doubling"
+    }
+  ]
+}

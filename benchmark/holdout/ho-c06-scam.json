@@ -1,0 +1,16 @@
+{
+  "id": "ho-c06-scam",
+  "title": "sim deactivation (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "this is TRAI department your sim card will be deactivated in two hours because of illegal activity complaints"
+    },
+    {
+      "t": 6,
+      "text": "to stop this press one to connect to our sub officer sir are you there sir"
+    }
+  ]
+}

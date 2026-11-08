@@ -1,0 +1,36 @@
+{
+  "id": "ho-bS13-scam",
+  "title": "Fake relative emergency (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello uncle, main Rahul bol raha hu"
+    },
+    {
+      "t": 6,
+      "text": "Rahul?"
+    },
+    {
+      "t": 10,
+      "text": "Kaun Rahul?"
+    },
+    {
+      "t": 14,
+      "text": "Aapka bhatija"
+    },
+    {
+      "t": 18,
+      "text": "Accident ho gaya hai, hospital mein hu"
+    },
+    {
+      "t": 22,
+      "text": "Phone kisi aur ka hai"
+    },
+    {
+      "t": 26,
+      "text": "Please jaldi 20 hazaar bhej do, baad mein samjhata hu"
+    }
+  ]
+}

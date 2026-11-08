@@ -1,0 +1,20 @@
+{
+  "id": "S090",
+  "title": "Fake link or login",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Free recharge मिल रहा है 500 का।"
+    },
+    {
+      "t": 10,
+      "text": "सच?"
+    },
+    {
+      "t": 15,
+      "text": "link खोलिए और अपना UPI PIN डालिए।"
+    }
+  ]
+}

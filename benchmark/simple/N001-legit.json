@@ -1,0 +1,20 @@
+{
+  "id": "N001",
+  "title": "Real bank alert",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "HDFC Bank fraud team से, कल रात 45000 का transaction आपने किया था?"
+    },
+    {
+      "t": 10,
+      "text": "नहीं किया।"
+    },
+    {
+      "t": 15,
+      "text": "card block कर दिया है। OTP या PIN हम कभी नहीं माँगते, branch से नया card ले लीजिए।"
+    }
+  ]
+}

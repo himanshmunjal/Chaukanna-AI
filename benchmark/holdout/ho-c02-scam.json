@@ -1,0 +1,16 @@
+{
+  "id": "ho-c02-scam",
+  "title": "bank kyc otp (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "namaste madam SBI se bol raha hu aapka KYC expire ho gaya hai account block ho jayega aaj hi"
+    },
+    {
+      "t": 6,
+      "text": "abhi aapke phone pe ek six digit code aaya hoga wo bata do jaldi jaldi"
+    }
+  ]
+}

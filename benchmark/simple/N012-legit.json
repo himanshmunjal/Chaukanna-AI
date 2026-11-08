@@ -1,0 +1,20 @@
+{
+  "id": "N012",
+  "title": "Delivery",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Zomato से, दरवाजा खोलिए।"
+    },
+    {
+      "t": 10,
+      "text": "जी, delivery OTP 4821 है।"
+    },
+    {
+      "t": 15,
+      "text": "धन्यवाद madam, खाना ले लीजिए।"
+    }
+  ]
+}

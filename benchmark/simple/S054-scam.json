@@ -1,0 +1,20 @@
+{
+  "id": "S054",
+  "title": "Refund or UPI",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Cashback के 2000 मिलने हैं।"
+    },
+    {
+      "t": 10,
+      "text": "कहाँ से?"
+    },
+    {
+      "t": 15,
+      "text": "Google Pay खोलिए, जो amount दिखे उस पर pay दबाइए, double होकर वापस आएगा।"
+    }
+  ]
+}

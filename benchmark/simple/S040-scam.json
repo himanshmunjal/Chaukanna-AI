@@ -1,0 +1,20 @@
+{
+  "id": "S040",
+  "title": "Electricity, gas or SIM",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Gas agency से, आपका connection बंद होने वाला है।"
+    },
+    {
+      "t": 10,
+      "text": "क्यों?"
+    },
+    {
+      "t": 15,
+      "text": "KYC के लिए ये app install करिए और अपना card number डालिए।"
+    }
+  ]
+}

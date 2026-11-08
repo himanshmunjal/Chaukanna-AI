@@ -1,0 +1,20 @@
+{
+  "id": "ho-a09-scam",
+  "title": "Fake Customs / Courier Delivery Hold (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Automated call from FedEx express"
+    },
+    {
+      "t": 6,
+      "text": "your incoming international shipment from London contains suspicious documents and undeclared jewelry"
+    },
+    {
+      "t": 10,
+      "text": "Press 1 to connect with customs officer or your package will be impounded and police warrant issued"
+    }
+  ]
+}

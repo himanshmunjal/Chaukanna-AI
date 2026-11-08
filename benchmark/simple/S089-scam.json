@@ -1,0 +1,20 @@
+{
+  "id": "S089",
+  "title": "Fake link or login",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Aadhaar update की last date आज है।"
+    },
+    {
+      "t": 10,
+      "text": "कहाँ करूँ?"
+    },
+    {
+      "t": 15,
+      "text": "WhatsApp के link पर जाकर OTP भर दीजिए।"
+    }
+  ]
+}

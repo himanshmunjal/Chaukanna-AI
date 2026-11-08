@@ -1,0 +1,20 @@
+{
+  "id": "call-044-scam",
+  "title": "Real speakerphone call #44 (guardian): बिजली विभाग से बोल रहा हूँ। आपका पिछला bill update नहीं हुआ, आज रात नए…",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 10,
+      "text": "बिजली विभाग से बोल रहा हूँ। आपका पिछला bill update नहीं हुआ, आज रात नए new connection कट जाएंगे।"
+    },
+    {
+      "t": 16.3,
+      "text": "बिल तो मैंने भर दिया था, system में दिख रहा है। मैं एक link भेज रहा हूँ।"
+    },
+    {
+      "t": 19.1,
+      "text": "10 रुपये pay करके update कर लीजिए।"
+    }
+  ]
+}

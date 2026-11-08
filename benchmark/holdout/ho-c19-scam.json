@@ -1,0 +1,16 @@
+{
+  "id": "ho-c19-scam",
+  "title": "romance gift (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hi baby its me john i sent you a big gift parcel from london with gold and iphone"
+    },
+    {
+      "t": 6,
+      "text": "custom officer will call you sorry you have to pay clearance fee dear then you get it i love you"
+    }
+  ]
+}

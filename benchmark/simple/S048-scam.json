@@ -1,0 +1,20 @@
+{
+  "id": "S048",
+  "title": "Tech support or remote access",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Paytm KYC team से, आपका wallet रुका है।"
+    },
+    {
+      "t": 10,
+      "text": "ठीक कराइए।"
+    },
+    {
+      "t": 15,
+      "text": "QuickSupport app डालिए, screen share कीजिए, दो मिनट लगेंगे।"
+    }
+  ]
+}

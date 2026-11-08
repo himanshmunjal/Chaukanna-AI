@@ -1,0 +1,20 @@
+{
+  "id": "S024",
+  "title": "OTP with no scary words",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "पेंशन चालू रखने के लिए verify करना है।"
+    },
+    {
+      "t": 10,
+      "text": "कैसे?"
+    },
+    {
+      "t": 15,
+      "text": "SMS में जो नंबर है बस वो बोल दीजिए, और कुछ नहीं।"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "N031",
+  "title": "Hospital or doctor",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Apollo Hospital reception से, आपके पति का operation सोमवार को है।"
+    },
+    {
+      "t": 10,
+      "text": "जी, पता है।"
+    },
+    {
+      "t": 15,
+      "text": "admission के time 25000 counter पर जमा कराना होगा।"
+    }
+  ]
+}

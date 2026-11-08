@@ -1,0 +1,20 @@
+{
+  "id": "ho-a13-scam",
+  "title": "Fake Tech Support / PC Virus Warning (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello, this is technical support from Microsoft Windows Security Center"
+    },
+    {
+      "t": 6,
+      "text": "We received automated alerts that dangerous trojan virus infected your computer from IP address"
+    },
+    {
+      "t": 10,
+      "text": "Download AnyDesk software immediately so our engineer can fix it remotely"
+    }
+  ]
+}

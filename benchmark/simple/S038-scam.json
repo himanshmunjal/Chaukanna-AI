@@ -1,0 +1,20 @@
+{
+  "id": "S038",
+  "title": "Electricity, gas or SIM",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Electricity office से, आपका 3400 बाकी है।"
+    },
+    {
+      "t": 10,
+      "text": "पता नहीं था।"
+    },
+    {
+      "t": 15,
+      "text": "इसी number पर अभी PhonePe करिए, वरना meter निकाल लेंगे।"
+    }
+  ]
+}

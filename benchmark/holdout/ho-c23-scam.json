@@ -1,0 +1,16 @@
+{
+  "id": "ho-c23-scam",
+  "title": "pm kisan scheme (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "kisan bhai sarkar ki taraf se nayi yojana mein aapko do lakh milenge"
+    },
+    {
+      "t": 6,
+      "text": "bas farm ka form fill karne ke liye aapka bank detail aur aadhar number and otp chahiye hoga ji"
+    }
+  ]
+}

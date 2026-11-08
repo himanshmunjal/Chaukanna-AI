@@ -1,0 +1,20 @@
+{
+  "id": "N029",
+  "title": "Real police or office",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Census वाले कल आपके घर आएँगे।"
+    },
+    {
+      "t": 10,
+      "text": "ठीक है।"
+    },
+    {
+      "t": 15,
+      "text": "परिवार की जानकारी तैयार रखिएगा।"
+    }
+  ]
+}

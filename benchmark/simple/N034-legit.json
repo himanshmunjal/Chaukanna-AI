@@ -1,0 +1,20 @@
+{
+  "id": "N034",
+  "title": "Hospital or doctor",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Pharmacy से, आपकी दवाई आ गई।"
+    },
+    {
+      "t": 10,
+      "text": "शाम को लेता हूँ।"
+    },
+    {
+      "t": 15,
+      "text": "ठीक है, 640 की है।"
+    }
+  ]
+}

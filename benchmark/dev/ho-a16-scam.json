@@ -1,0 +1,24 @@
+{
+  "id": "ho-a16-scam",
+  "title": "Rental Property Deposit / Defense Officer Scam (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello, I saw your flat rental ad on MagicBricks"
+    },
+    {
+      "t": 6,
+      "text": "I am Major Vikram Singh, Army Officer transferred to your city"
+    },
+    {
+      "t": 10,
+      "text": "I want to finalize property today and pay advance 50,000"
+    },
+    {
+      "t": 14,
+      "text": "I am sending an Army Canteen QR code, scan it and enter PIN to receive advance money"
+    }
+  ]
+}

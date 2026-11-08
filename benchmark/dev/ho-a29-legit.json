@@ -1,0 +1,20 @@
+{
+  "id": "ho-a29-legit",
+  "title": "Credit Card Bill Payment Reminder (set A, pasted)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello, this is an automated reminder from Axis Bank"
+    },
+    {
+      "t": 6,
+      "text": "Your credit card bill payment of 12,450 rupees is due on 5th of this month"
+    },
+    {
+      "t": 10,
+      "text": "Kindly pay using your regular bank app or official portal to avoid late charges"
+    }
+  ]
+}

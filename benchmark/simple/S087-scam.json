@@ -1,0 +1,20 @@
+{
+  "id": "S087",
+  "title": "Fake link or login",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपका Instagram बंद हो रहा है।"
+    },
+    {
+      "t": 10,
+      "text": "क्यों?"
+    },
+    {
+      "t": 15,
+      "text": "जो link भेजा है उसमें username और password डाल दीजिए।"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "call-061-legit",
+  "title": "Real speakerphone call #61 (guardian): मैडम, Amazon delivery main gate पे खड़ा हूँ, आपका parcel है।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 6.6,
+      "text": "मैडम, Amazon delivery main gate पे खड़ा हूँ, आपका parcel है।"
+    },
+    {
+      "t": 8.4,
+      "text": "अच्छा, आती हूँ।"
+    },
+    {
+      "t": 12.7,
+      "text": "delivery OTP बता दीजिए, तभी order close होगा।"
+    },
+    {
+      "t": 18.5,
+      "text": "OTP मैं बाहर आकर ही बताती हूँ, तब मैं order collect भी कर लूँगी।"
+    },
+    {
+      "t": 20.9,
+      "text": "OK mam।"
+    }
+  ]
+}

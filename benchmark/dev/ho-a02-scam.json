@@ -1,0 +1,24 @@
+{
+  "id": "ho-a02-scam",
+  "title": "Digital Arrest / Fake Police Dept (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Listen carefully, this is Inspector Rathore from Mumbai Cyber Cell"
+    },
+    {
+      "t": 6,
+      "text": "A courier package containing illegal narcotics and five fake passports registered under your Aadhaar number has been seized at customs"
+    },
+    {
+      "t": 10,
+      "text": "You are under digital arrest"
+    },
+    {
+      "t": 14,
+      "text": "Stay on video call, do not inform anyone, and transfer security deposit to this RBI account for verification"
+    }
+  ]
+}

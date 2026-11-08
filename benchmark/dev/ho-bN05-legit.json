@@ -1,0 +1,28 @@
+{
+  "id": "ho-bN05-legit",
+  "title": "Genuine bank loan EMI reminder (set B, call_scam_test_dataset.csv)",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Good morning sir"
+    },
+    {
+      "t": 6,
+      "text": "This is a reminder from your bank"
+    },
+    {
+      "t": 10,
+      "text": "Aapki home loan EMI 12 November ko due hai"
+    },
+    {
+      "t": 14,
+      "text": "Okay, auto debit ho jayega na?"
+    },
+    {
+      "t": 18,
+      "text": "Yes sir, registered account se automatically debit ho jayega"
+    }
+  ]
+}

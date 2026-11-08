@@ -1,0 +1,24 @@
+{
+  "id": "ho-bS21-scam",
+  "title": "Fake tax department (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Sir income tax department se bol raha hu"
+    },
+    {
+      "t": 6,
+      "text": "Aapka PAN suspicious transaction se linked hai"
+    },
+    {
+      "t": 10,
+      "text": "Sir mera toh normal salary account hai"
+    },
+    {
+      "t": 14,
+      "text": "Aapko penalty avoid karni hai toh settlement amount abhi transfer karna hoga"
+    }
+  ]
+}

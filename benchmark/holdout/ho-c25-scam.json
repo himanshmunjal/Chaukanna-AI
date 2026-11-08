@@ -1,0 +1,16 @@
+{
+  "id": "ho-c25-scam",
+  "title": "ceo gift cards (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hey its Mr Verma your director here i am in a meeting cannot talk"
+    },
+    {
+      "t": 6,
+      "text": "urgently need five amazon gift cards of ten thousand each for client, buy and send me the codes on whatsapp i will reimburse"
+    }
+  ]
+}

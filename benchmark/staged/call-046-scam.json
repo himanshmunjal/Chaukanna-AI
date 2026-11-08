@@ -1,0 +1,16 @@
+{
+  "id": "call-046-scam",
+  "title": "Real speakerphone call #46 (guardian): आंटी जी, गलती से आपके number पर 5000 चले गए, मेरे बेटे की fees थी।",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 8,
+      "text": "आंटी जी, गलती से आपके number पर 5000 चले गए, मेरे बेटे की fees थी।"
+    },
+    {
+      "t": 14.3,
+      "text": "अच्छा, मुझे तो पता नहीं, message आया होगा। please वापस भेज दीजिए, बहुत जरूरी है।"
+    }
+  ]
+}

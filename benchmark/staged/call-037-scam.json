@@ -1,0 +1,32 @@
+{
+  "id": "call-037-scam",
+  "title": "Real speakerphone call #37 (guardian): अब आप digital arrest में हैं। अभी Supreme Court के judge आपसे बात करें…",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2.4,
+      "text": "Ma'am।"
+    },
+    {
+      "t": 7.3,
+      "text": "अब आप digital arrest में हैं। अभी Supreme Court के judge आपसे बात करेंगे।"
+    },
+    {
+      "t": 21.4,
+      "text": "Judge"
+    },
+    {
+      "t": 29.1,
+      "text": "जज साहब, मुझसे आपके सारे पैसे RBI की जांच में जाएंगे, जांच के बाद वापस मिल जाएंगे।"
+    },
+    {
+      "t": 30.5,
+      "text": "तो मुझे क्या करना है?"
+    },
+    {
+      "t": 36,
+      "text": "FD तोड़कर सारा पैसा इस safe account में transfer कर दीजिए आज ही।"
+    }
+  ]
+}

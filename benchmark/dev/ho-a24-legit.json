@@ -1,0 +1,28 @@
+{
+  "id": "ho-a24-legit",
+  "title": "Hospital Appointment Rescheduling (set A, pasted)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello Mr"
+    },
+    {
+      "t": 6,
+      "text": "Gupta, calling from Apollo Hospital reception"
+    },
+    {
+      "t": 10,
+      "text": "Dr"
+    },
+    {
+      "t": 14,
+      "text": "Sharma has an emergency surgery scheduled tomorrow morning, so your OPD appointment needs to be moved to 4 PM"
+    },
+    {
+      "t": 18,
+      "text": "Please let us know if that time works for you"
+    }
+  ]
+}

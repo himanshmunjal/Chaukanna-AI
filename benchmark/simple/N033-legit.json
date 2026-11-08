@@ -1,0 +1,20 @@
+{
+  "id": "N033",
+  "title": "Hospital or doctor",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Lab से, आपकी report आ गई है।"
+    },
+    {
+      "t": 10,
+      "text": "सब ठीक है?"
+    },
+    {
+      "t": 15,
+      "text": "डॉक्टर को दिखा लीजिए, sugar थोड़ी ज़्यादा है।"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "call-050-scam",
+  "title": "Real speakerphone call #50 (guardian): मैं stock exchange से बोल रहा हूँ, क्या आप एक account खुलवाना चाहेंगे?",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2.7,
+      "text": "नमस्ते।"
+    },
+    {
+      "t": 7.7,
+      "text": "मैं stock exchange से बोल रहा हूँ, क्या आप एक account खुलवाना चाहेंगे?"
+    },
+    {
+      "t": 10,
+      "text": "हाँ, जरूर। क्यों नहीं?"
+    },
+    {
+      "t": 16,
+      "text": "आपको मैंने एक link भेजा है, उस पर जाकर login करिए और free cash पाइए।"
+    },
+    {
+      "t": 21.4,
+      "text": "ये"
+    },
+    {
+      "t": 25.1,
+      "text": "जो login account है, ये तो मेरा OTP मांग रहा है।"
+    },
+    {
+      "t": 29.3,
+      "text": "हाँ, इसमें OTP भी डालिए और आपको free cash मिलेगा।"
+    }
+  ]
+}

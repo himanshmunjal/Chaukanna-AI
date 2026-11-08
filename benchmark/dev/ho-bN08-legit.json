@@ -1,0 +1,28 @@
+{
+  "id": "ho-bN08-legit",
+  "title": "Genuine insurance document verification (set B, call_scam_test_dataset.csv)",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Madam, main LIC office se bol raha hu"
+    },
+    {
+      "t": 6,
+      "text": "Aapki policy ke address mein ek spelling mismatch hai"
+    },
+    {
+      "t": 10,
+      "text": "Oh, toh kaise correct hoga?"
+    },
+    {
+      "t": 14,
+      "text": "Aap nearest branch mein original document leke aa jaiye"
+    },
+    {
+      "t": 18,
+      "text": "Phone par koi payment ya OTP ki zarurat nahi hai"
+    }
+  ]
+}

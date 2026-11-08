@@ -1,0 +1,10 @@
+{
+  "title": "Real tenant police-verification follow-up (Hinglish)",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    { "t": 1,  "text": "Namaste, main local police station se constable Yadav bol raha hoon." },
+    { "t": 6,  "text": "Aapne kiraayedaar ki verification ka form diya tha, uske liye kal subah thane aa jaiye." },
+    { "t": 12, "text": "Original rent agreement aur kiraayedaar ki photo saath le aana. Dhanyavaad." }
+  ]
+}

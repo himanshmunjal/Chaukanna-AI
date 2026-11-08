@@ -1,0 +1,24 @@
+{
+  "id": "call-070-legit",
+  "title": "Real speakerphone call #70 (guardian): मैडम, Canara Bank branch से।",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 4.3,
+      "text": "मैडम, Canara Bank branch से।"
+    },
+    {
+      "t": 7.8,
+      "text": "आपका KYC इस महीने renew करना है।"
+    },
+    {
+      "t": 10,
+      "text": "PhonePe हो जाएगा।"
+    },
+    {
+      "t": 17.2,
+      "text": "नहीं madam, PhonePe नहीं। Aadhaar और PAN की copy लेके branch आ जाइए, कोई जल्दी नहीं।"
+    }
+  ]
+}

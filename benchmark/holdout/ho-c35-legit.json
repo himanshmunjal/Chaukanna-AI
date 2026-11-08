@@ -1,0 +1,24 @@
+{
+  "id": "ho-c35-legit",
+  "title": "telemarketing credit card (set C, scam_call_test_data.csv)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "good evening sir i am calling from axis bank we have a new credit card offer"
+    },
+    {
+      "t": 6,
+      "text": "if you are not interested its absolutely fine"
+    },
+    {
+      "t": 10,
+      "text": "no no we dont need any details on call you can apply on website if you want"
+    },
+    {
+      "t": 14,
+      "text": "ok thank you sir"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "S008",
+  "title": "Courier or customs",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "DHL office से, आपका parcel Taiwan जा रहा था, customs ने रोक लिया है।"
+    },
+    {
+      "t": 10,
+      "text": "मेरा नहीं है।"
+    },
+    {
+      "t": 15,
+      "text": "Mumbai police से connect करता हूँ, उनको अपना Aadhaar और account बता दीजिए।"
+    }
+  ]
+}

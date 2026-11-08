@@ -1,0 +1,10 @@
+{
+  "title": "Fake SBI officer asks for OTP (from a real speakerphone test)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    { "t": 3,  "text": "Hello" },
+    { "t": 10, "text": "Maam, can you please share your OTP with me? I am speaking from SBI bank." },
+    { "t": 26, "text": "Ma'am, I am speaking from SBI Bank. This is not a scam call. Can you please share your OTP with me?" }
+  ]
+}

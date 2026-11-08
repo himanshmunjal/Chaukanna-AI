@@ -1,0 +1,20 @@
+{
+  "id": "ho-a11-scam",
+  "title": "Wrong Credit / Accidental Money Transfer (set A, pasted)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Hello bhai, by mistake I sent 15,000 rupees to your Google Pay number while paying my mother's hospital bill!"
+    },
+    {
+      "t": 6,
+      "text": "See SMS you must have got 15,000 credited!"
+    },
+    {
+      "t": 10,
+      "text": "Please send it back immediately on my phone number, please urgent!"
+    }
+  ]
+}

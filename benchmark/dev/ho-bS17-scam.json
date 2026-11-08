@@ -1,0 +1,20 @@
+{
+  "id": "ho-bS17-scam",
+  "title": "Fake loan approval (set B, call_scam_test_dataset.csv)",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 2,
+      "text": "Congratulations sir, aapka 5 lakh personal loan approve ho gaya hai"
+    },
+    {
+      "t": 6,
+      "text": "Maine apply kiya tha but abhi tak response nahi aaya"
+    },
+    {
+      "t": 10,
+      "text": "Sir amount release ke liye advance insurance charge pay karna padega"
+    }
+  ]
+}

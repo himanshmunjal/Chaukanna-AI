@@ -1,0 +1,20 @@
+{
+  "id": "S029",
+  "title": "Relative in trouble",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "आपके पति का office से बोल रहा हूँ, उनको heart attack आया।"
+    },
+    {
+      "t": 10,
+      "text": "कहाँ हैं वो?"
+    },
+    {
+      "t": 15,
+      "text": "पहले इस account में 30000 डालिए, फिर hospital का पता बताऊँगा।"
+    }
+  ]
+}

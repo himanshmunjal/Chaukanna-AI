@@ -1,0 +1,16 @@
+{
+  "id": "ho-c28-scam",
+  "title": "bail fake arrest (set C, scam_call_test_data.csv)",
+  "label": "scam",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello uncle your son has been caught by police in a drug case at delhi"
+    },
+    {
+      "t": 6,
+      "text": "i am advocate, if you want him released today then send two lakh as bail now, dont call him his phone is seized"
+    }
+  ]
+}

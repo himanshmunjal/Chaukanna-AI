@@ -1,0 +1,20 @@
+{
+  "id": "N025",
+  "title": "Real police or office",
+  "label": "legit",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "नमस्ते, local थाने से constable यादव, किराएदार की verification है।"
+    },
+    {
+      "t": 10,
+      "text": "जी बताइए।"
+    },
+    {
+      "t": 15,
+      "text": "कल सुबह थाने आ जाइए, rent agreement और Aadhaar की copy लेकर।"
+    }
+  ]
+}

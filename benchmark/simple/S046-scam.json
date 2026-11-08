@@ -1,0 +1,20 @@
+{
+  "id": "S046",
+  "title": "Tech support or remote access",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "Bank की तरफ से technical support है।"
+    },
+    {
+      "t": 10,
+      "text": "जी।"
+    },
+    {
+      "t": 15,
+      "text": "video call पर अपना phone screen दिखाइए, app खोलकर balance check करते हैं।"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ho-c40-legit",
+  "title": "customer care callback (set C, scam_call_test_data.csv)",
+  "label": "legit",
+  "language": "en",
+  "lines": [
+    {
+      "t": 2,
+      "text": "hello this is flipkart support calling back for your complaint number ending 4432"
+    },
+    {
+      "t": 6,
+      "text": "the replacement phone will be delivered by tuesday"
+    },
+    {
+      "t": 10,
+      "text": "no you dont have to pay anything extra"
+    },
+    {
+      "t": 14,
+      "text": "ok have a good day"
+    }
+  ]
+}

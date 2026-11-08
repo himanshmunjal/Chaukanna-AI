@@ -1,0 +1,20 @@
+{
+  "id": "S042",
+  "title": "Electricity, gas or SIM",
+  "label": "scam",
+  "language": "hi",
+  "lines": [
+    {
+      "t": 5,
+      "text": "FASTag बंद हो रहा है, आज ही renew कराना है।"
+    },
+    {
+      "t": 10,
+      "text": "कैसे?"
+    },
+    {
+      "t": 15,
+      "text": "link भेजा है, उसमें login करके 2000 डाल दीजिए।"
+    }
+  ]
+}
